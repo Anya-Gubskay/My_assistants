@@ -1,0 +1,51 @@
+{{#if containerTest}}
+<div class="timer">
+    <div>
+        <span id="output">{{time.time}}</span>
+    </div>
+</div>
+
+<div class="test">
+    <p class="test__list__question">{{test.question}}</p>
+
+    {{#if answerInput}}
+    <div class="test__list">
+        <input class='inputAnswer' type='text' autofocus></input>
+        <button class=" buttonAnswer test__list__answer {{test.classTest}}" disabled>
+            Ответить
+        </button>
+    </div>
+    {{/if}}
+
+    {{#if answer}}
+    <div class="test__list">
+        <a class="test__list__answer {{test.classTest}} {{test.answer1.result}}" href="#/test{{test.link}}">
+            {{test.answer1.option}}
+        </a>
+
+        <a class="test__list__answer {{test.classTest}} {{test.answer2.result}}" href="#/test{{test.link}}">
+            {{test.answer2.option}}
+        </a>
+
+        <a class="test__list__answer  {{test.classTest}} {{test.answer3.result}}" href="#/test{{test.link}}">
+            {{test.answer3.option}}
+        </a>
+
+        <a class="test__list__answer  {{test.classTest}} {{test.answer4.result}}" href="#/test{{test.link}}">
+            {{test.answer4.option}}
+        </a>
+    </div>
+    {{/if}}
+</div>
+{{/if}}
+
+{{#if thanks}}
+ <div class="test__list">
+    <p class = "thanks">
+    Вы дошли до конца теста и вы уже победителей.Спасибо вам за прохождение. Мы желаем вам никогда не сдаваться, почаще
+    улыбаться и двигаться только вперед.
+    <br> Ведь движение - это жизни!
+     </p>
+</div>
+{{/if}}
+

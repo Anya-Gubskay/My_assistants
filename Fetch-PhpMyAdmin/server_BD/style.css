@@ -1,0 +1,21 @@
+
+form {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+label {
+    margin: 0 5px;
+}
+
+
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+button {
+    min-width: 90px;
+    min-height: 40px;
+}

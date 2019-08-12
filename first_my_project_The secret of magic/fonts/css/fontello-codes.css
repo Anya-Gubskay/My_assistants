@@ -1,0 +1,12 @@
+
+@font-face {
+    font-family: 'fontello';
+    src: url("../font_icon/fontello.svg") format('svg');
+    src: url("../font_icon/fontello.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.icon-vkontakte:before { content: '\e800'; } /* '' */
+.icon-twitter-bird:before { content: '\f303'; } /* '' */
+.icon-youtube:before { content: '\f313'; } /* '' */
+.icon-instagram:before { content: '\f31e'; } /* '' */

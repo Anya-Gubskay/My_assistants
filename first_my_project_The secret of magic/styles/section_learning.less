@@ -1,0 +1,164 @@
+@import "section_magicians";
+
+.section {
+
+  h1 {
+    color: #ffe5ff;
+    font: 50px 'Marck Script';
+
+    @media only screen  and (max-width: 690px) {
+      font: 35px 'Marck Script';
+    }
+
+    @media only screen  and (max-width: 500px) {
+      position: relative;
+      font: 25px 'Marck Script';
+    }
+
+  }
+
+  .colored {
+    color: black;
+    font: 50px 'Pacifico';
+
+    @media screen  and (max-width: 680px) {
+      font: 25px 'Pacifico';
+    }
+
+    @media only screen  and (max-width: 500px) {
+      color: #6dc2ff;
+      font: 25px 'Pacifico';
+      position: relative;
+      top: -20px;
+
+    }
+
+  }
+
+  .container {
+    max-width: 1200px;
+    min-width: 300px;
+
+    &:nth-child(2n+2) {
+      background: @blue;
+    }
+
+    background: rgba(212, 26, 17, 0.56);
+
+    @media only screen  and (max-width: 500px) {
+      margin: 0;
+    }
+      form {
+        background: #6dc2ff;
+      }
+
+      .data {
+        color: white;
+      }
+
+      [name="result"] {
+        color: #9b0ff1;
+        font: bold 30px 'Pacifico';
+      }
+
+    h2 {
+      font: bold 40px 'Marck Script';
+      color: #8709d4;
+      background: black;
+      position: relative;
+
+      @media only screen  and (max-width: 500px) {
+        font: 20px 'Pacifico';
+        height: 45px;
+      }
+
+    }
+
+    img {
+      margin: 25px 10px;
+    }
+
+    &__item {
+      font: bold 20px Vijaya;
+      color: rgb(22, 49, 180);
+      max-width: 600px;
+      margin: 20px 40px;
+      background: rgba(249, 251, 255, 0.55);
+      min-width: 320px;
+
+      @media only screen  and (max-width: 500px) {
+        font: bold 12px Vijaya;
+        margin: 10px;
+        .translate(-30px);
+      }
+
+      &__text {
+        display: none;
+        background: rgba(31, 3, 188, 0.37);
+
+        p {
+          color: white;
+          font: bold 18px cursive;
+        }
+
+        @media only screen  and (max-width: 500px) {
+          font: bold 16px Vijaya;
+        }
+
+      }
+
+      .secret {
+        cursor: pointer;
+        .transition(1s);
+
+        &:hover {
+          color: rgba(31, 3, 188, 0.37);
+        }
+
+        @media only screen  and (max-width: 500px) {
+          display: none;
+        }
+
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      .mobile__secret {
+        display: none;
+
+        @media only screen  and (max-width: 500px) {
+          display: block;
+          font:  16px cursive;
+        }
+
+      }
+
+        .mobile__secret__text {
+            display: none;
+       }
+    }
+
+    a {
+      text-align: center;
+      color: #6f0d55;
+      font: 25px 'Lobster';
+      position: relative;
+      top: -20px;
+      cursor: pointer;
+      .transition(1s);
+
+      &:hover {
+        color: #00f899;
+      }
+
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,531 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html lang="ru" itemscope="" itemtype="http://schema.org/Article"><head><script type="text/javascript">
+            var isMobileDevice = function() {
+                var mobile = false;(function(a){if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4)))mobile = true})(navigator.userAgent||navigator.vendor||window.opera);
+                return mobile;
+            }
+            
+            var isServicesUrl = function(){
+                if ('/lifestyle/20181006/1038017832/Vitebskiy-illyuzionist-za-50-tysyach-pokazal-Leonidu-Yakubovichu-tryuk-s-koltsom.html'.match(/^(\/services\/|\/export\/|\/api\/)/i)){
+                    return true;
+                }else{
+                    return false;
+                }
+            }  
+            var cookieDate = new Date(new Date().getTime() + 60 * 1000 * 60 * 24 * 365);
+            var mobileReturnParam = ''.trim();
+            var isMobileSite = false;
+            var mobileVersion = true;
+            var cookieReturn = 0;
+            
+            if(mobileReturnParam == 'no'){
+                if(isMobileDevice() && !isServicesUrl() && isMobileSite){
+                    document.cookie = "mobile_return=0; path=/; expires=" + cookieDate.toUTCString();
+                }
+            } else if(mobileReturnParam == 'yes'){
+                if(isMobileDevice() && !isServicesUrl() && !isMobileSite){
+                    document.cookie = "mobile_return=1; path=/; expires=" + cookieDate.toUTCString();
+                }
+            } else{
+                if(isMobileDevice() && !isServicesUrl() && !isMobileSite && mobileVersion){
+                    if(!cookieReturn){
+                        window.location = 'https://m.sputnik.by/lifestyle/20181006/1038017832/Vitebskiy-illyuzionist-za-50-tysyach-pokazal-Leonidu-Yakubovichu-tryuk-s-koltsom.html?mobile_return=no';
+                    }
+                }
+            }
+
+            document.addEventListener("DOMContentLoaded", function(event) {
+                window.switch = document.getElementById('switch-version');
+
+                if(window.switch!=null || window.switch!=undefined){
+                    window.switch.addEventListener("click", function(event) {
+                        if(isMobileDevice() && !isServicesUrl() && !isMobileSite){
+                            document.cookie = "mobile_return=0; path=/; expires=" + cookieDate.toUTCString();
+                        }
+                    },false);
+                }
+            });
+
+        </script><title>Витебский иллюзионист за 50 тысяч показал Леониду Якубовичу трюк с кольцом</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="description" content='Витеблянин выступил на "Первом канале", показал 15 фокусов с кольцом и заработал 50 тысяч российских рублей.'><meta name="keywords" content="шоу-бизнес, Леонид Якубович, Беларусь, Витебск"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="robots" content="all"><meta name="format-detection" content="telephone=no"><meta name="analytics:p_ts" content="1538812920"><meta name="analytics:rubric" content="lifestyle"><meta name="viewport" content="width=1024"><meta name="twitter:widgets:csp" content="on"><meta property="fb:app_id" content="1762456267404629"><meta property="fb:pages" content="607419789386130"><link rel="apple-touch-icon" href="/i/sputnik.png"><meta name="author" content="Sputnik"><meta name="apple-itunes-app" content="app-id=969452947, app-argument=com.sputniknews://article?issuer_id=26&issuer_article_id=1038017832"><meta name="google-play-app" content="app-id=com.sputniknews.sputnik"><link rel="manifest" href="/project_data/manifest.json"><link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"><link rel="canonical" href="https://sputnik.by/lifestyle/20181006/1038017832/Vitebskiy-illyuzionist-za-50-tysyach-pokazal-Leonidu-Yakubovichu-tryuk-s-koltsom.html"><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600&amp;subset=cyrillic-ext,latin" rel="stylesheet"><link rel="stylesheet" href="https://cdn1.img.sputnik.by/min/css/common.css?23d44dcf96"><link rel="stylesheet" href="https://cdn1.img.sputnik.by/min/css/videoplayer/common.css?23d44dcf96">
+            
+                <!--[if IE 7]><link rel="stylesheet" href="/css/ie7.css"/><![endif]-->
+                <!--[if IE 8]><link rel="stylesheet" href="/css/ie8.css"/><![endif]-->
+            
+        <link rel="stylesheet" href="https://cdn2.img.sputnik.by/min/css/windows/windows.css?29fea7578"><link rel="stylesheet" href="https://cdn2.img.sputnik.by/min/css/article.css?21ab7e62c2"><link rel="stylesheet" href="https://cdn2.img.sputnik.by/min/css/blocks/lightgallery/lightgallery.css?230d827e8"><link rel="stylesheet" href="https://cdn2.img.sputnik.by/min/css/comments/comments.css?291871d58"><script src="https://cdn1.img.sputnik.by/min/js/libs/jquery.min.js?2547186fd"></script><script src="https://cdn1.img.sputnik.by/min/js/libs/modernizr.min.js?24cb4858a"></script><script src="https://cdn1.img.sputnik.by/min/js/libs/adriver.core.2.js?2f58bc24a"></script><script src="https://cdn1.img.sputnik.by/min/js/libs/adfox.asyn.code.ver3-scroll.js?2c08395d2"></script><script src="https://cdn1.img.sputnik.by/min/js/plugins/ASXLoader.js?2da3e5d85"></script><script src="https://cdn1.img.sputnik.by/min/js/plugins/riaplayer.js?274a6f609"></script><script src="https://cdn1.img.sputnik.by/min/js/libs/video/videojs.min.js?237fa4374"></script><script>
+				videojs.addLanguage("ru", {
+					
+						"LIVE": "В ЭФИРЕ",
+						"Play Video": "Воспроизвести видео",
+						"Play": "Воспроизвести",
+						"Pause": "Приостановить",
+						"Current Time": "Текущее время",
+						"Duration Time": "Продолжительность",
+						"Remaining Time": "Оставшееся время",
+						"Stream Type": "Тип потока",
+						"Loaded": "Загрузка",
+						"Progress": "Прогресс",
+						"Fullscreen": "Полноэкранный режим",
+						"Non-Fullscreen": "Выйти из полноэкранного режима",
+						"Mute": "Без звука",
+						"Unmute": "Со звуком",
+						"Playback Rate": "Скорость воспроизведения",
+						"Close Modal Dialog": "Закрыть",
+						"Close": "Закрыть",
+						"You aborted the media playback": "Вы прервали воспроизведение видео",
+						"A network error caused the media download to fail part-way.": "Ошибка сети вызвала сбой во время загрузки видео.",
+						"The media could not be loaded, either because the server or network failed or because the format is not supported.": "Невозможно загрузить видео из-за сетевого или серверного сбоя либо формат не поддерживается.",
+						"The media playback was aborted due to a corruption problem or because the media used features your browser did not support.": "Воспроизведение видео было приостановлено из-за повреждения либо в связи с тем, что видео использует функции, неподдерживаемые вашим браузером.",
+						"No compatible source was found for this media.": "Совместимые источники для этого видео отсутствуют.",
+						"The media is encrypted and we do not have the keys to decrypt it.": "Видео в зашифрованном виде, и у нас нет ключей для расшифровки."
+				});
+			</script><script src="https://cdn1.img.sputnik.by/min/js/libs/video/videojs-contrib-hls.min.js?2b5bb8014"></script><script src="https://cdn1.img.sputnik.by/min/js/libs/video/videojs-dvrseekbar.js?26c3bb4b5"></script><script src="https://cdn1.img.sputnik.by/min/js/libs/video/videojs-resolution-switcher.js?276c6fd99"></script><script src="https://cdn2.img.sputnik.by/min/js/libs/video/videojs.thumbnails.js?2879e970c"></script><script src="https://cdn2.img.sputnik.by/min/js/libs/video/videojs-sputnik.js?2554a1b61"></script><script src="https://cdn1.img.sputnik.by/min/js/plugins/jquery.jscrollpane.min.js?2e2b842e1"></script><script src="https://cdn2.img.sputnik.by/min/js/plugins/interceptbefore.js?21948b7bc"></script><script src="https://cdn1.img.sputnik.by/min/js/plugins/pubsub.js?24a5c0ebe"></script><script src="https://cdn2.img.sputnik.by/min/js/plugins/video-counters.js?279775338"></script><script src="https://cdn2.img.sputnik.by/min/js/plugins/cookie.js?2d7aee8d2"></script><script src="https://cdn1.img.sputnik.by/min/js/libs/stickyfill.min.js?23f4a007e"></script><script src="//yastatic.net/pcode/adfox/loader.js"></script><script>var _paq = _paq || []; (function() { _paq.push(['setSiteId', 'sputnik_by']); _paq.push(['trackPageView']); _paq.push(['enableLinkTracking']); var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript'; g.defer=true; g.async=true; g.src='//a.ria.ru/js/counter.js'; s.parentNode.insertBefore(g,s); } )(); $(function() { Sputnik = Sputnik || {}; SputnikSNG = true; $.extend(Sputnik, { lang_code: 'rus', www: 'https://sputnik.by/', comet: { ticket: "00", url: "https://comet.sputniknews.com/polling", ts: "0", objects: [], project: "sputnik_by", reduce: "0", timeouts: { try2: 1000, try3: 10000, try4: 30000 } }, locale: { readmore: 'Читать дальше' } }); }); window.suggestmeyes_loaded = true;</script>
+            
+                <!-- Facebook Pixel Code -->
+                <script>
+                !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+                n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+                n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                document,'script','https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '422561384759698'); // Insert your pixel ID here.
+                fbq('track', 'PageView');
+                </script>
+                <noscript><img height="1" width="1" style="display:none"
+                src="https://www.facebook.com/tr?id=422561384759698&ev=PageView&noscript=1"
+                /></noscript>
+                <!-- DO NOT MODIFY -->
+                <!-- End Facebook Pixel Code -->
+            
+        <script type="text/javascript" src="//vk.com/js/api/openapi.js?137"></script><script type="text/javascript">
+            window._taboola = window._taboola || [];
+            _taboola.push({article:'auto'});
+            !function (e, f, u, i) {
+                if (!document.getElementById(i)){
+                    e.async = 1;
+                    e.src = u;
+                    e.id = i;
+                    f.parentNode.insertBefore(e, f);
+                }
+            }(document.createElement('script'),
+            document.getElementsByTagName('script')[0],
+            '//cdn.taboola.com/libtrc/sputnikrussia-network/loader.js',
+            'tb_loader_script');
+            if(window.performance && typeof window.performance.mark == 'function'){
+                window.performance.mark('tbl_ic');
+            }
+            </script><meta property="og:title" content="Витебский иллюзионист за 50 тысяч показал Леониду Якубовичу трюк с кольцом"><meta property="og:url" content="https://sputnik.by/lifestyle/20181006/1038017832/Vitebskiy-illyuzionist-za-50-tysyach-pokazal-Leonidu-Yakubovichu-tryuk-s-koltsom.html"><meta property="og:type" content="website"><meta property="og:description" content="Sputnik Беларусь говорит то, о чем другие молчат"><meta property="og:image" content="https://cdn2.img.sputnik.by/images/103802/42/1038024253.jpg"><meta property="og:image:width" content="700"><meta property="og:image:height" content="440"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@sputnikbelarus"><meta name="twitter:url" content="https://sputnik.by/lifestyle/20181006/1038017832/Vitebskiy-illyuzionist-za-50-tysyach-pokazal-Leonidu-Yakubovichu-tryuk-s-koltsom.html"><meta name="twitter:title" content="Витебский иллюзионист за 50 тысяч показал Леониду Якубовичу трюк с кольцом"><meta name="twitter:description" content='Витеблянин выступил на "Первом канале", показал 15 фокусов с кольцом и заработал 50 тысяч российских рублей.'><meta name="twitter:image" content="https://cdn2.img.sputnik.by/images/103802/42/1038024253.jpg"><link rel="alternate" href="/export/rss2/archive/index.xml" title="RSS" type="application/rss+xml"><meta content="2018-10-05T17:08:23Z" http-equiv="last-modified"><meta content="2018-10-05T17:08:23Z" itemprop="dateModified" name="lastmod"><meta content="2018-10-06T11:02:00Z" itemprop="datePublished" name="pubdate"><meta content="2018-10-06T11:02:00Z" itemprop="dateCreated"><link rel="alternate" href="/export/rss2/lifestyle/index.xml" title="RSS" type="application/rss+xml"><link rel="amphtml" href="https://sputnik.by/amp/lifestyle/20181006/1038017832/Vitebskiy-illyuzionist-za-50-tysyach-pokazal-Leonidu-Yakubovichu-tryuk-s-koltsom.html"><meta name="url_type" content="usual"><meta name="news_keywords" content="шоу-бизнес, Леонид Якубович, Беларусь, Витебск">
+            
+                <script>
+                !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function()
+                {n.callMethod? n.callMethod.apply(n,arguments):n.queue.push(arguments)}
+                ;if(!f._fbq)f._fbq=n;
+                n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+                t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+                document,'script','https://connect.facebook.net/en_US/fbevents.js');
+                fbq('init', '1634578370100389');
+                fbq('track', "PageView");
+                fbq('track', 'ViewContent');</script>
+            
+        
+            
+                <script>
+                fbq('track', 'ViewContent', {
+                value: 3.50,
+                currency: 'USD'
+                });
+                </script>
+            
+        </head><body class="site_by"><div id="fb-root"></div><script>(function(d, s, id) {
+                      var js, fjs = d.getElementsByTagName(s)[0];
+                      if (d.getElementById(id)) return;
+                      js = d.createElement(s); js.id = id;
+                      js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&appId=1762456267404629&version=v2.8";
+                      fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script><script>
+                        window.fbAsyncInit = function() {
+                            FB.Event.subscribe('comment.create', function(response) {
+                                $.ajax({
+                                    type: 'post',
+                                    data: {
+                                        'comment_id': response.commentID,
+                                        'article_id': '1038017832'
+                                    },
+                                    url: '/services/comments/facebook_add/'
+                                });
+                            });
+
+                            FB.Event.subscribe('comment.remove', function(response) {
+                                $.ajax({
+                                    type: 'post',
+                                    data: { 'comment_id': response.commentID },
+                                    url: '/services/comments/facebook_delete/'
+                                });
+                            });
+                        }
+                    </script>
+            
+            <!-- Google Tag Manager -->
+            <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K72T3G"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-K72T3G');</script>
+            <!-- End Google Tag Manager -->
+            
+        
+            
+                <!-- (C)2000-2016 Gemius SA - gemiusAudience / sputnik.by / Home Page -->
+                <script type="text/javascript">
+                    var pp_gemius_identifier = 'oqKQ1.u4Y5bzMPXH4HuGmqdz..OgDBfT_t5Nt8rJV7b.67';
+                    // lines below shouldn't be edited
+                    function gemius_pending(i) { window[i] = window[i] || function() {var x = window[i+'_pdata'] = window[i+'_pdata'] || []; x[x.length]=arguments;};};
+                    gemius_pending('gemius_hit'); gemius_pending('gemius_event'); gemius_pending('pp_gemius_hit'); gemius_pending('pp_gemius_event');
+                    (function(d,t) {try {var gt=d.createElement(t),s=d.getElementsByTagName(t)[0],l='http'+((location.protocol=='https:')?'s':''); gt.setAttribute('async','async');
+                    gt.setAttribute('defer','defer'); gt.src=l+'://gaby.hit.gemius.pl/xgemius.js'; s.parentNode.insertBefore(gt,s);} catch (e) {}})(document,'script');
+                </script>
+            
+        <a class="arrowup" data-state="up" data-back="0"><i class="icon up"></i></a><div class="page_container m-relative"><div class="b-sitenav "><div class="l-wrap m-nobgimg"><ul class="b-sitenav__list"><li class="b-sitenav__list-item"><a href="http://bel.sputnik.by/">Sputnik Беларусь/Belarus</a></li><li class="b-sitenav__list-item"><a href="http://m.sputnik.by?mobile_return=no" id="switch-version">Мобильная версия</a></li><li class="b-sitenav__list-item"><a href="#" class="b-sitenav-all__trigger">Все сайты</a></li></ul><div class="b-sitenav__time"><span>16:05 </span>15 Декабря 2018</div><div class="b-banner m-banner-3 "><!--В head сайта один раз подключите библиотеку-->
+<script src="https://yastatic.net/pcode/adfox/loader.js"></script>
+
+<!--AdFox START-->
+<!--riaru-->
+<!--Площадка: sputnik.by / * / *-->
+<!--Тип баннера: 1000x-->
+<!--Расположение: 21001_sputnik.by_bn1-->
+<div id="adfox_1481032175601465"></div>
+<script>
+    window.Ya.adfoxCode.create({
+        ownerId: 249922,
+        containerId: 'adfox_1481032175601465',
+        params: {
+            pp: 'iwj',
+            ps: 'ckaq',
+            p2: 'fliq'
+        }
+    });
+</script></div></div></div><div class="b-sitenav-all" style="display: none;"><div class="l-wrap"><div id="sitenavAll"></div><a href="#" class="b-sitenav-all__trigger"></a></div></div><div class="b-mainnav" id="mainnav"><div class="l-wrap"><ul class="b-mainnav__list"><li class="b-mainnav__item"><a href="/main/">Главное</a></li><li class="b-mainnav__item"><a href="/world/">В мире</a></li><li class="b-mainnav__item"><a href="/politics/">Политика</a></li><li class="b-mainnav__item"><a href="/economy/">Экономика </a></li><li class="b-mainnav__item"><a href="/society/" data-for="#parent-1013169893">Общество</a></li><li class="b-mainnav__item"><a href="/incidents/">Происшествия</a></li><li class="b-mainnav__item"><a href="/radio/" data-for="#parent-1013169949">Радио</a></li><li class="b-mainnav__item"><a href="/sport/">Спорт</a></li><li class="b-mainnav__item"><a href="/press_center/">Пресс-центр</a></li></ul><span class="b-mainnav__control"></span></div><div id="parent-1013169893" class="b-mainnav__2level"><div class="l-wrap"><ul class="b-mainnav__2level-list"><li><a href="/health/">Здоровье </a></li><li><a href="/education/">Образование</a></li></ul></div></div><div id="parent-1013169949" class="b-mainnav__2level"><div class="l-wrap"><ul class="b-mainnav__2level-list"><li><a href="/sprosimenyakak/">Спроси меня как</a></li><li><a href="/zlydninatydni/">Злыдни на тыдни</a></li><li><a href="/priznakizhizni/">Признаки жизни</a></li><li><a href="/graniformata/">Грани формата</a></li></ul></div></div></div><div class="b-header__nav"><div class="l-wrap"><div class="b-header__items"><div class="b-headerwidget__name"><a href="/">Беларусь</a></div><div class="b-lang-switcher"><span class="b-lang-switcher__list"><a href="http://sputnik.by/" class="b-lang-switcher__item active"><span>рус</span></a><a href="http://bel.sputnik.by/" class="b-lang-switcher__item"><span>бел</span></a></span></div></div><div class="b-header__nav-radio m-t0">Прямой эфир<span id="radioOpen" class="b-header__nav-radio-play" data-url="https://nfw.ria.ru/flv/audio.aspx?ID=68862011&amp;type=mp3" data-locale="7" data-ssl="s"></span></div><ul class="currency_list" id="currlist"><li class="currency_item b-show"><span class="currency_name">USD</span><span class="currency_value currency_up">2.12<span class="currency_change"></span></span></li><li class="currency_item"><span class="currency_name">EUR</span><span class="currency_value currency_down">2.40<span class="currency_change"></span></span></li><li class="currency_item"><span class="currency_name">100 RUB</span><span class="currency_value currency_down">3.19<span class="currency_change"></span></span></li></ul><div class="b-header__nav-social "><ul><li class="b-header__nav-social-item fb"><a target="_blank" href="https://facebook.com/sputnikbelarus"></a></li><li class="b-header__nav-social-item tw"><a target="_blank" href="https://twitter.com/sputnikbelarus"></a></li><li class="b-header__nav-social-item ins"><a target="_blank" href="https://instagram.com/sputnik.by"></a></li><li class="b-header__nav-social-item soundcloud"><a target="_blank" href="https://soundcloud.com/sputnik-belarus"></a></li><li class="b-header__nav-social-item vk"><a target="_blank" href="https://vk.com/sputnikbelarus"></a></li><li class="b-header__nav-social-item ok"><a target="_blank" href="https://ok.ru/group/53622940434687"></a></li><li class="b-header__nav-social-item youtube"><a target="_blank" href="https://youtube.com/channel/UCaHkiNdjjmzkHbPuTqmgsUg"></a></li><li class="b-header__nav-social-item yandex"><a target="_blank" href="https://news.yandex.ru/index.html?from=rubric&amp;favid=254122615"></a></li><li class="b-header__nav-social-item rss"><a target="_blank" href="/export/rss2/archive/index.xml"></a></li><li class="b-header__nav-social-item viber"><a target="_blank" href="https://chats.viber.com/sputnik.by"></a></li></ul><ul class="hello"><li class="b-header__nav-social-item mailto"><a target="_blank" href="mailto:office@sputnik.by"></a></li><li class="b-header__nav-social-item tel"><a target="_blank" href="tel:+375172378365"></a></li></ul></div><div class="b-header__nav-search"><a href="/search/">Поиск</a><form class="b-header__nav-form" action="/search/"><input class="b-header__nav-form-text shorten" type="text" name="query" autocomplete="off"><input class="b-header__nav-form-submit" value="" type="submit"></form></div></div></div><div class="b-breakingnews "></div><div class="l-wrap"><div class="b-header"><a class="b-header__logo" href="/"></a><div class="b-article__header"><img src="https://cdn2.img.sputnik.by/images/103802/42/1038024259.jpg" width="1000" height="541" alt="Витебский иллюзионист Евгений Стадольник" title="Витебский иллюзионист Евгений Стадольник" class="" itemprop="associatedMedia"><div class="b-article__header-title "><h1 itemprop="name">Витебский иллюзионист за 50 тысяч показал Леониду Якубовичу трюк с кольцом</h1></div><div class="b-article__header-copy"><span><span>
+                        ©
+                    Photo :  из личного архива Евгения Стадольника</span></span></div></div></div></div><div class="l-main m-oh"><div class="l-wrap m-clear"><div class="l-maincolumn m-static"><div class="b-article"><div class="b-article__refs-text"><a class="b-article__refs-rubric" href="/lifestyle/" itemprop="articleSection">Стиль жизни</a><div class="b-article__refs-credits"><time class="b-article__refs-date" itemprop="dateCreated" datetime="2018-10-06T11:02"><!--noindex-->11:02 06.10.2018<!--/noindex--></time><!--noindex--><span data-article="1038017832" id="getShortUrl" class="b-article__refs-getshorturl">Получить короткую ссылку</span><!--/noindex--></div><div class="b-counters "><span class="b-counters-icon b-counters-icon_view"><i></i><!--noindex-->1213<!--/noindex--></span><span class="b-counters-icon b-counters-icon_like"><i></i><!--noindex-->6<!--/noindex--></span><span class="b-counters-icon b-counters-icon_dislike"><i></i><!--noindex-->0<!--/noindex--></span></div></div><div itemprop="description" class="b-article__lead"><p>Витеблянин выступил на "Первом канале", показал 15 фокусов с кольцом и заработал 50 тысяч российских рублей.</p></div><div itemprop="articleBody" class="b-article__text"><p>Молодой иллюзионист из Витебска впечатлил авторскими трюками уже нескольких российских звезд. Корреспондент Sputnik поговорил с артистом о том, можно ли заработать на магии и насколько сложно научиться создавать иллюзии.</p>
+<h3>50 тысяч за кольцо</h3>
+<p>"Поехать на шоу "Я могу" меня уговорила бывшая девушка. Заполнил анкету на "Первом канале" и выслал запись со своим выступлением. Меня пригласили на кастинг, а потом и на передачу", &mdash; рассказал Sputnik иллюзионист Евгений Стадольник.</p>
+<p>Для победы Евгению нужно было показать 15 авторских фокусов с исчезновением и появлением кольца. Якубович лично убедился в том, что реквизит не бутафорский. В конце номера молодой человек взял для трюков чужое кольцо.</p>
+<div class="b-inject m-inject-free"><div class="b-inject__media"><div data-src="https://cdn1.img.sputnik.by/images//103801/73/1038017364.jpg" data-sub-html="Иллюзионист из Витебска впечатлил авторскими трюками уже нескольких российских звезд" class=""><img src="https://cdn2.img.sputnik.by/images//103801/74/1038017437.jpg" width="657" height="438" alt="Иллюзионист из Витебска впечатлил авторскими трюками уже нескольких российских звезд" title="Иллюзионист из Витебска впечатлил авторскими трюками уже нескольких российских звезд" class=""></div></div><div class="b-inject__copy"><span>
+                        ©
+                    Photo :  из личного архива Евгения Стадольника</span></div><div class="b-inject__content">Иллюзионист из Витебска впечатлил авторскими трюками уже нескольких российских звезд</div></div>
+<p>"Мои выступления видели многие российские звезды. Например, в прошлом году в Витебск на международный фестиваль хореографии приезжал Сергей Безруков. И так получилось, что вечером мне позвонил директор фестиваля и спросил, не могу ли я во время фуршета удивить актера. Тогда я абсолютно не готовился, а импровизировал. Безрукову понравилось", &mdash; вспоминает молодой человек.</p>
+<p>После этого Евгения пригласили в качестве ведущего и иллюзиониста на одну из закрытых вечеринок фестиваля.</p>
+<h3>Пионерский лагерь и первый фокус</h3>
+<p>Евгений признается, что любил фокусы с детства, но до 15 лет не видел выступлений иллюзионистов вживую.</p>
+<p>"В 15 я поехал отдыхать в детский лагерь под Витебском и там впервые увидел выступление иллюзиониста. Я загорелся этим искусством. Разгадал несколько фокусов самостоятельно и понял, что у меня может получиться", &mdash; говорит Евгений.</p>
+<p>Самый первый фокус парень показал в кругу семьи, вдохновившись поездкой в лагерь. Трюк с балансирующей на большом пальце руки купюрой Евгений не разгадывал, а нашел в Интернете. В отличие от других номеров, этот репетировал недолго.</p>
+<div class="b-inject m-inject-free"><div class="b-inject__media"><div data-src="https://cdn1.img.sputnik.by/images//103801/74/1038017488.jpg" data-sub-html="Самый первый фокус парень показал в кругу семьи" class=""><img src="https://cdn1.img.sputnik.by/images//103801/75/1038017524.jpg" width="655" height="435" alt="Самый первый фокус парень показал в кругу семьи" title="Самый первый фокус парень показал в кругу семьи" class=""></div></div><div class="b-inject__copy"><span>
+                        ©
+                    Photo :  из личного архива Евгения Стадольника</span></div><div class="b-inject__content">Самый первый фокус парень показал в кругу семьи</div></div>
+<p>По словам иллюзиониста, многие трюки ему удавалось разгадать, но были и те, которые не "поддавались", как, например, фокусы с картами, поскольку он еще не знал "карточной базы". Со временем понял и их.</p>
+<p>"Благодаря математике, которую я люблю, мне удалось хорошо развить логическое мышление, оно во многом помогает разгадывать фокусы", &mdash; делится секретом Евгений.</p>
+<h3>Фокусник-экономист</h3>
+<p>Стадольник учится на третьем курсе БГЭУ на факультете экономики и менеджмента. Оплачивать учебу помогает отец, поскольку выступления пока не приносят желаемого дохода. Несмотря на то, что парень планирует в будущем зарабатывать, показывая фокусы, университет он собирается окончить.</p>
+<p>Поначалу родители несерьезно относились к увлечению сына. Теперь, видя, как он трудится и любит свое дело, всячески стараются ему помочь.</p>
+<p>Уже сейчас Евгений выступает на корпоративах, свадьбах, различных мероприятиях. По его словам, может выехать в любую точку мира.</p>
+<p>"Думаю, что могу назвать себя профессионалом. У меня в программе большое количество трюков, причем часть из них &mdash; авторские. Теперь раздумываю о том, чтобы поделиться с коллегами своими наработками", &mdash; рассказал Евгений.</p>
+<div class="b-inject m-inject-free"><div class="b-inject__media"><div data-src="https://cdn2.img.sputnik.by/images//103801/75/1038017577.jpg" data-sub-html="Евгений выступает на корпоративах, свадьбах, различных мероприятиях" class=""><img src="https://cdn1.img.sputnik.by/images//103801/76/1038017672.jpg" width="654" height="403" alt="Евгений выступает на корпоративах, свадьбах, различных мероприятиях" title="Евгений выступает на корпоративах, свадьбах, различных мероприятиях" class=""></div></div><div class="b-inject__copy"><span>
+                        ©
+                    Photo :  из личного архива Евгения Стадольника</span></div><div class="b-inject__content">Евгений выступает на корпоративах, свадьбах, различных мероприятиях</div></div>
+<p>По словам иллюзиониста, сейчас, когда он узнал основы ремесла, наработал ловкость рук и понял, как устроен жанр, на репетицию фокуса, чтобы можно было его показать публике, уходит максимум часа два. Но до совершенства трюки можно доводить годами. С опытом пришло и понимание того, что некоторые моменты в выступлении можно спрятать за правильной подачей фокуса, отвлекая внимание зрителей.</p>
+<p>Во время подготовки номера артист использует творческий подход и анализ &mdash; одно без другого невозможно. Сначала придумывает идею, сценарий, а потом работает над технической частью. Реквизит старается использовать минимально, только там, где это действительно необходимо.</p>
+<h3>Не фокусник, а иллюзионист</h3>
+<p>"Я предпочитаю называть себя иллюзионистом. По-моему, фокусник &mdash; несколько устаревшее слово, которое шаблонно ассоциируется с человеком, который достает кроликов из цилиндра. Иллюзионист &ndash; это современный артист, а умение создавать иллюзию &ndash; настоящее искусство, в котором я стараюсь развиваться и находить новые подходы", &mdash; признается Евгений.</p>
+<p>Как ни странно, но, работая иллюзионистом, молодой человек верит в чудеса, и самое главное чудо, по его мнению, это умение радоваться жизни и находить что-то волшебное в обычных вещах. А вот ни в паранормальные явления, ни в экстрасенсов Стадольник не верит.</p>
+<div class="b-inject m-inject-free"><div class="b-inject__media"><div data-src="https://cdn2.img.sputnik.by/images//103801/77/1038017703.jpg" data-sub-html="По мнению Евгения, до совершенства трюки можно доводить годами" class=""><img src="https://cdn1.img.sputnik.by/images//103801/77/1038017792.jpg" width="657" height="436" alt="По мнению Евгения, до совершенства трюки можно доводить годами" title="По мнению Евгения, до совершенства трюки можно доводить годами" class=""></div></div><div class="b-inject__copy"><span>
+                        ©
+                    Photo :  из личного архива Евгения Стадольника</span></div><div class="b-inject__content">По мнению Евгения, до совершенства трюки можно доводить годами</div></div>
+<p>Сейчас в планах артиста &mdash; освоить большие иллюзии, которые требуют совершенно других приемов и иного реквизита.</p>
+<p>"Большие иллюзии &mdash; это номера с исчезновением людей и предметов или протыканием ассистентов шпагами. Один из наиболее ярких представителей в этом жанре &mdash; Дэвид Копперфильд", &mdash; поделился своими планами Евгений.</p>
+<p>Молодой человек верит, что со временем сможет зарабатывать хорошие деньги, показывая фокусы, главное &mdash; упорно работать и все время двигаться вперед.</p></div><div class="b-banner m-banner-33 m-mb20 m-mt10"><!--В head сайта один раз подключите библиотеку-->
+<script src="https://yastatic.net/pcode/adfox/loader.js" crossorigin="anonymous"></script>
+
+
+<!--AdFox START-->
+<!--riaru-->
+<!--Площадка: sputnik.by / * / *-->
+<!--Тип баннера: 700x-->
+<!--Расположение: 21007_bn7-->
+<div id="adfox_150098574608433923"></div>
+<script>
+    window.Ya.adfoxCode.create({
+        ownerId: 249922,
+        containerId: 'adfox_150098574608433923',
+        params: {
+            pp: 'kvl',
+            ps: 'ckaq',
+            p2: 'flvd',
+            puid1: ''
+        }
+    });
+</script></div><div xmlns:ria="http://ria.ru/ns" class="social-likes-pane__holder"></div><div xmlns:ria="http://ria.ru/ns" class="social-likes-pane m-clear" id="share"><div class="plusone" title="Google+"></div><div class="facebook" data-title="Витебский иллюзионист за 50 тысяч показал Леониду Якубовичу трюк с кольцом" title="Facebook"></div><div class="twitter" data-title="Витебский иллюзионист за 50 тысяч показал Леониду Якубовичу трюк с кольцом" title="Twitter" data-via="sputnikbelarus"></div><div title="vkontakte" data-title="Витебский иллюзионист за 50 тысяч показал Леониду Якубовичу трюк с кольцом" class="vkontakte"></div><div class="odnoklassniki" title="odnoklassniki"></div><a class="social-likes-pane__eml" href="mailto:?subject=%D0%92%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B8%D0%BB%D0%BB%D1%8E%D0%B7%D0%B8%D0%BE%D0%BD%D0%B8%D1%81%D1%82%20%D0%B7%D0%B0%2050%20%D1%82%D1%8B%D1%81%D1%8F%D1%87%20%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D0%BB%20%D0%9B%D0%B5%D0%BE%D0%BD%D0%B8%D0%B4%D1%83%20%D0%AF%D0%BA%D1%83%D0%B1%D0%BE%D0%B2%D0%B8%D1%87%D1%83%20%D1%82%D1%80%D1%8E%D0%BA%20%D1%81%20%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%BE%D0%BC&amp;body=%20sputnik.by%20%0D%0A%0D%0A%D0%92%D0%B8%D1%82%D0%B5%D0%B1%D1%81%D0%BA%D0%B8%D0%B9%20%D0%B8%D0%BB%D0%BB%D1%8E%D0%B7%D0%B8%D0%BE%D0%BD%D0%B8%D1%81%D1%82%20%D0%B7%D0%B0%2050%20%D1%82%D1%8B%D1%81%D1%8F%D1%87%20%D0%BF%D0%BE%D0%BA%D0%B0%D0%B7%D0%B0%D0%BB%20%D0%9B%D0%B5%D0%BE%D0%BD%D0%B8%D0%B4%D1%83%20%D0%AF%D0%BA%D1%83%D0%B1%D0%BE%D0%B2%D0%B8%D1%87%D1%83%20%D1%82%D1%80%D1%8E%D0%BA%20%D1%81%20%D0%BA%D0%BE%D0%BB%D1%8C%D1%86%D0%BE%D0%BC%0D%0Ahttps://sputnik.by/lifestyle/20181006/1038017832/Vitebskiy-illyuzionist-za-50-tysyach-pokazal-Leonidu-Yakubovichu-tryuk-s-koltsom.html"><span class="social-likes__icon"></span></a></div><div class="b-article__likes js-likes"><a href="/services/likes/like/?article_id=1038017832&amp;value=1" class="b-article__likes-up js-likeUp"><!--noindex-->6<!--/noindex--></a><a href="/services/likes/like/?article_id=1038017832&amp;value=-1" class="b-article__likes-down js-likeDown"><!--noindex-->0<!--/noindex--></a></div><div class="b-article__refs"><div class="b-article__refs-list"></div><div class="b-article__refs-list"></div><div class="b-article__refs-list"><div class="b-article__refs-item"><div class="b-article__refs-item-description">Теги:</div><div class="b-article__refs-item-title b-article__refs-tags"><a href="/tags/keyword_shou-biznes/">шоу-бизнес</a>, <a href="/tags/person_Leonid_JAkubovich/">Леонид Якубович</a>, <a href="/tags/geo_Belarus/">Беларусь</a>, <a href="/tags/geo_Vitebsk/">Витебск</a></div></div></div></div><div class="b-banner m-banner-12 ">
+
+
+<!-- LentaInformNews Start -->
+<div id="LentaInformScriptRootN14300" class="news-block-magick">
+    <div id="LentaInformPreloadN14300">
+                <a href="http://lentainform.com/" target="_blank">Загрузка...</a>    
+    </div>
+    <script>
+                        (function(){
+            var D=new Date(),d=document,b='body',ce='createElement',ac='appendChild',st='style',ds='display',n='none',gi='getElementById';
+            var i=d[ce]('iframe');i[st][ds]=n;d[gi]("LentaInformScriptRootN14300")[ac](i);try{var iw=i.contentWindow.document;iw.open();iw.writeln("<ht"+"ml><bo"+"dy></bo"+"dy></ht"+"ml>");iw.close();var c=iw[b];}
+            catch(e){var iw=d;var c=d[gi]("LentaInformScriptRootN14300");}var dv=iw[ce]('div');dv.id="MG_ID";dv[st][ds]=n;dv.innerHTML=14300;c[ac](dv);
+            var s=iw[ce]('script');s.async='async';s.defer='defer';s.charset='utf-8';s.src="//jsn.lentainform.com/s/p/sputnik.by.14300.js?t="+D.getYear()+D.getMonth()+D.getDate()+D.getHours();c[ac](s);})();
+    </script>
+</div>
+
+<!-- Яндекс Дзен -->
+
+<div class="widget-container" style="max-width: 800px; margin: 40px auto; position: relative; width:100%"></div>
+<script>
+    (function(w, d, n) {
+        w[n] = w[n] || [];
+        w[n].push(() => {
+            w.YandexZen.renderWidget({
+                clid: [940,941], // идентификатор партнера, должен быть получен в пункте 2
+                container: '.widget-container', // cелектор элемента или сам элемент, куда надо вставить виджет
+                successCallback: function () { // вызывается при успешной вставке виджета
+                    console.log('виджет вставлен успешно');
+                },
+                failCallback: function () { // вызывается при неуспешной вставке виджета
+                    console.log('проблема при встаки виджета, отреагируйте на нее');
+                },
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.src = "//zen.yandex.ru/widget-loader";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(window, document, 'yandexZenAsyncCallbacks');
+</script>
+
+
+<br>
+<div id="unit_90103"><a href="http://smi2.ru/">Новости smi2.ru</a></div>
+<script type="text/javascript" charset="utf-8">
+  (function() {
+    var sc = document.createElement('script'); sc.type = 'text/javascript'; sc.async = true;
+    sc.src = '//smi2.ru/data/js/90103.js'; sc.charset = 'utf-8';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sc, s);
+  }());
+</script></div><div class="taboola-banner"><div id="taboola-below-article-thumbnails"></div><script type="text/javascript">
+                    window._taboola = window._taboola || [];
+                    _taboola.push({
+                        mode: 'thumbnails-a', 
+                        container: 'taboola-below-article-thumbnails', 
+                        placement: 'Below Article Thumbnails', 
+                        target_type: 'mix' 
+                    });
+                    </script></div><div class="l-orange "><div class="b-important "><div class="b-title"><h3>Главные темы</h3></div><ul class="b-important__list"><li class="b-important__item"><a href="/incidents/20181215/1039176034/Podrostok-s-toporom-i-nozhami-prishel-turnir-Zolotaya-shayba-v-Gomele.html"><img src="https://cdn2.img.sputnik.by/images//103917/59/1039175981.jpg" width="213" height="130" alt="Подросток пришел на хоккейный турнир с походным топориком и ножами" title="Подросток пришел на хоккейный турнир с походным топориком и ножами" class=""></a><div class="b-important__item-title"><a href="/incidents/20181215/1039176034/Podrostok-s-toporom-i-nozhami-prishel-turnir-Zolotaya-shayba-v-Gomele.html">Вооруженный подросток пришел на турнир "Золотая шайба" в Гомеле</a></div><p class="b-important__item-announce">При обыске в комнате у подозреваемого нашли еще около 20 боевых патронов, его мать пояснить это не смогла. </p><div class="b-counters m-counters-leftpos"><span class="b-counters-icon b-counters-icon_view"><i></i><!--noindex-->118<!--/noindex--></span></div></li><li class="b-important__item"><a href="/sport/20181215/1039176708/Krivko-zanyala-12-e-mesto-v-pasyute-na-vtorom-etape-KM.html"><img src="https://cdn2.img.sputnik.by/images//103917/70/1039177093.jpg" width="213" height="130" alt="Финиш в гонке преследования у женщин на втором этапе КМ по биатлону" title="Финиш в гонке преследования у женщин на втором этапе КМ по биатлону" class=""></a><div class="b-important__item-title"><a href="/sport/20181215/1039176708/Krivko-zanyala-12-e-mesto-v-pasyute-na-vtorom-etape-KM.html">Кривко заняла 12-е место в пасьюте на втором этапе КМ</a></div><p class="b-important__item-announce">Белоруска вышла на старт под шестым номером, но два промаха сказались на общем результате. </p><div class="b-counters m-counters-leftpos"><span class="b-counters-icon b-counters-icon_view"><i></i><!--noindex-->166<!--/noindex--></span></div></li><li class="b-important__item"><a href="/society/20181215/1039176104/Domracheva-pokazala-trogatelnye-foto-semeynogo-uzhina-v-Norvegii.html"><img src="https://cdn1.img.sputnik.by/images/103737/00/1037370014.jpg" width="213" height="130" alt="Домрачева провела тренировку полумарафонцев, но сама пропустит забег" title="Домрачева провела тренировку полумарафонцев, но сама пропустит забег" class=""></a><div class="b-important__item-title"><a href="/society/20181215/1039176104/Domracheva-pokazala-trogatelnye-foto-semeynogo-uzhina-v-Norvegii.html">Домрачева показала трогательные фото семейного ужина в Норвегии</a></div><p class="b-important__item-announce">Олимпийская чемпионка после завершения карьеры отдыхает на родине супруга, известного биатлониста Уле-Эйнар Бьерндалена. </p><div class="b-counters m-counters-leftpos"><span class="b-counters-icon b-counters-icon_view"><i></i><!--noindex-->620<!--/noindex--></span></div></li></ul></div></div><div class="b-orbit m-slider"><h3 class="b-title"><a href="http://orbita-sputnik.ru/" target="_blank">Орбита Sputnik</a></h3><div id="orbit-slider"><ul class="b-orbit__list"><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://lv.sputniknews.ru" rel="tag" target="_blank">SPUTNIK Латвия</a></div><div class="b-orbit__img"><a href="https://lv.sputniknews.ru/lifestyle/20181214/10331033/Segodnya-v-Latvii-nachnut-rabotat-novye-lyzhnye-trassy.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_lv/14/09/140939.jpg" width="213" height="130" alt="Зимние виды спорта. Лыжи" title="Зимние виды спорта. Лыжи" class=""></a></div><div class="b-orbit__title"><a href="https://lv.sputniknews.ru/lifestyle/20181214/10331033/Segodnya-v-Latvii-nachnut-rabotat-novye-lyzhnye-trassy.html" target="_blank">Вставай на лыжи!</a></div><div class="b-orbit__announce"><p>В Латвии открываются новые лыжные трассы: представители спортивных комплексов рассказали, как борются с отсутствием снега.</p></div></li><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://lt.sputniknews.ru" rel="tag" target="_blank">SPUTNIK Литва</a></div><div class="b-orbit__img"><a href="https://lt.sputniknews.ru/video/20181214/7808923/Lithuania-pogranichniki-zagadali-polzovatelyam-zagadku-o-rysi-i-zabore.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_lt/780/85/7808537.jpg" width="213" height="130" alt="Литовские пограничники сняли на видео рысь" title="Литовские пограничники сняли на видео рысь" class=""></a></div><div class="b-orbit__title"><a href="https://lt.sputniknews.ru/video/20181214/7808923/Lithuania-pogranichniki-zagadali-polzovatelyam-zagadku-o-rysi-i-zabore.html" target="_blank">Загадка о рыси</a></div><div class="b-orbit__announce"><p>Литовские пограничники опубликовали видео с камер наблюдения, на котором рысь перелезает через забор, и предложили угадать его высоту.</p></div></li><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://ru.sputnik.md" rel="tag" target="_blank">SPUTNIK Молдова</a></div><div class="b-orbit__img"><a href="https://ru.sputnik.md/technologies/20181214/23619048/Proryv-v-nauke-moldavskie-fiziki-sozdali-material-kotoryy-mozhet-spasti-zhizni.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_md/2132/94/21329407.jpg" width="213" height="130" alt="Лаборатория" title="Лаборатория" class=""></a></div><div class="b-orbit__title"><a href="https://ru.sputnik.md/technologies/20181214/23619048/Proryv-v-nauke-moldavskie-fiziki-sozdali-material-kotoryy-mozhet-spasti-zhizni.html" target="_blank">Прорыв в науке</a></div><div class="b-orbit__announce"><p>Группа молдавских физиков разработала новый наноматериал, который может спасти жизни.</p></div></li></ul><ul class="b-orbit__list"><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://ee.sputniknews.ru" rel="tag" target="_blank">SPUTNIK Эстония</a></div><div class="b-orbit__img"><a href="https://ee.sputniknews.ru/news/20181214/14182449/NATO-vojna-Russia-Baltija.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_ee/1261/96/12619624.jpg" width="213" height="130" alt="Пуск сверхзвуковой противокорабельной ракеты Москит с ракетного катера" title="Пуск сверхзвуковой противокорабельной ракеты Москит с ракетного катера" class=""></a></div><div class="b-orbit__title"><a href="https://ee.sputniknews.ru/news/20181214/14182449/NATO-vojna-Russia-Baltija.html" target="_blank">Кто кого?</a></div><div class="b-orbit__announce"><p>Эксперты американского военного журнала National Interest написали сценарий неядерной войны между НАТО и Россией на территории Балтии.</p></div></li><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://ru.sputniknews.kz" rel="tag" target="_blank">SPUTNIK Казахстан</a></div><div class="b-orbit__img"><a href="https://ru.sputniknews.kz/radio/20181214/8499033/taraz-turisty-privlechenie-ehkspert.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_kaz/849/85/8498582.jpg" width="213" height="130" alt="Директор казахстанской туристской ассоциации Рашида Шайкенова" title="Директор казахстанской туристской ассоциации Рашида Шайкенова" class=""></a></div><div class="b-orbit__title"><a href="https://ru.sputniknews.kz/radio/20181214/8499033/taraz-turisty-privlechenie-ehkspert.html" target="_blank">Археологический рай</a></div><div class="b-orbit__announce"><p>Чем привлекает гостей Тараз и его окрестности, рассказала директор Казахстанской туристской ассоциации.</p></div></li><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://sputnik-abkhazia.ru" rel="tag" target="_blank">SPUTNIK Абхазия</a></div><div class="b-orbit__img"><a href="https://sputnik-abkhazia.ru/columnists/20181214/1025968109/Intellektualnyy-tonus-kak-v-Sukhume-gotovyat-molodykh-liderov.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_ab//102596/70/1025967079.jpg" width="213" height="130" alt="Компьютер" title="Компьютер" class=""></a></div><div class="b-orbit__title"><a href="https://sputnik-abkhazia.ru/columnists/20181214/1025968109/Intellektualnyy-tonus-kak-v-Sukhume-gotovyat-molodykh-liderov.html" target="_blank">Интеллектуальный тонус</a></div><div class="b-orbit__announce"><p>О том, как тренировать память и зрение, что делать, чтобы держать мозг в тонусе и как изучать иностранные языки, читайте в материале Sputnik.</p></div></li></ul><ul class="b-orbit__list"><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://az.sputniknews.ru" rel="tag" target="_blank">SPUTNIK Азербайджан</a></div><div class="b-orbit__img"><a href="https://az.sputniknews.ru/video/20181214/418423635/sputnik-sigarety-zapret-zakon-azerbajdzhan-opros.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_az//41842/34/418423420.jpg" width="213" height="130" alt="Антитабачному закону - год: Sputnik Азербайджан искал результаты" title="Антитабачному закону - год: Sputnik Азербайджан искал результаты" class=""></a></div><div class="b-orbit__title"><a href="https://az.sputniknews.ru/video/20181214/418423635/sputnik-sigarety-zapret-zakon-azerbajdzhan-opros.html" target="_blank">Не курить!</a></div><div class="b-orbit__announce"><p>Sputnik Азербайджан решил выяснить, каковы результаты антитабачного закона и узнать, насколько охотно азербайджанские курильщики соблюдают законодательство.</p></div></li><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://ru.armeniasputnik.am" rel="tag" target="_blank">SPUTNIK Армения</a></div><div class="b-orbit__img"><a href="https://ru.armeniasputnik.am/society/20181214/16251612/incidenty-v-erevanskom-zooparke-mogut-byt-sledstviem-kriminalnogo-zagovora-ehksperty.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_am//1575/93/15759336.jpg" width="213" height="130" alt="Львицы в еревaнском зоопарке" title="Львицы в еревaнском зоопарке" class=""></a></div><div class="b-orbit__title"><a href="https://ru.armeniasputnik.am/society/20181214/16251612/incidenty-v-erevanskom-zooparke-mogut-byt-sledstviem-kriminalnogo-zagovora-ehksperty.html" target="_blank">"Саботаж и диверсия"</a></div><div class="b-orbit__announce"><p>Армения может стать транзитной страной для нелегальной торговли животными: эксперты связывают отравления в Ереванском зоопарке с криминалом.</p></div></li><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://sputnik-georgia.ru" rel="tag" target="_blank">SPUTNIK Грузия</a></div><div class="b-orbit__img"><a href="https://sputnik-georgia.ru/radio/20181214/243479993/Eks-glava-MID-Gruzii-dal-otsenku-ocherednomu-raundu-peregovorov-v-Zheneve.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_ge/23417/39/234173988.jpg" width="213" height="130" alt="Ираклий Менагаришвили на 52-ой ежегодной Ассамблее ООН" title="Ираклий Менагаришвили на 52-ой ежегодной Ассамблее ООН" class=""></a></div><div class="b-orbit__title"><a href="https://sputnik-georgia.ru/radio/20181214/243479993/Eks-glava-MID-Gruzii-dal-otsenku-ocherednomu-raundu-peregovorov-v-Zheneve.html" target="_blank">Упущенный шанс</a></div><div class="b-orbit__announce"><p>Бывший глава МИД Грузии рассказал, почему участникам Женевских переговоров в очередной раз не удалось достичь соглашения.</p></div></li></ul><ul class="b-orbit__list"><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://ru.sputnik.kg" rel="tag" target="_blank">SPUTNIK Кыргызстан</a></div><div class="b-orbit__img"><a href="https://ru.sputnik.kg/video/20181214/1042438509/kyrgyzstan-kalilov-mintrans-zhehehnbekov.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_kg/104243/84/1042438495.jpg" width="213" height="130" alt="Видео — как Жээнбеков отчитывал министра Калилова на заседании Совбеза" title="Видео — как Жээнбеков отчитывал министра Калилова на заседании Совбеза" class=""></a></div><div class="b-orbit__title"><a href="https://ru.sputnik.kg/video/20181214/1042438509/kyrgyzstan-kalilov-mintrans-zhehehnbekov.html" target="_blank">Калилов, встаньте!</a></div><div class="b-orbit__announce"><p>Президент Кыргызстана Сооронбай Жээнбеков на заседании Совета безопасности раскритиковал министра транспорта - видео.</p></div></li><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://tj.sputniknews.ru" rel="tag" target="_blank">SPUTNIK Таджикистан</a></div><div class="b-orbit__img"><a href="https://tj.sputniknews.ru/culture/20181214/1027714174/tajikistan-ded-moroz-boboi-barfi.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_tj/102432/82/1024328273.jpg" width="213" height="130" alt="Военные музыканты 201-й российской военной базы впервые поздравили детей в кишлаке Дарьебод" title="Военные музыканты 201-й российской военной базы впервые поздравили детей в кишлаке Дарьебод" class=""></a></div><div class="b-orbit__title"><a href="https://tj.sputniknews.ru/culture/20181214/1027714174/tajikistan-ded-moroz-boboi-barfi.html" target="_blank">Снежный дедушка</a></div><div class="b-orbit__announce"><p>Sputnik собрал необычные факты о Бобои Барфи – так в Таджикистане зовут Деда Мороза.</p></div></li><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://uz.sputniknews.ru" rel="tag" target="_blank">SPUTNIK Узбекистан</a></div><div class="b-orbit__img"><a href="https://uz.sputniknews.ru/incidents/20181214/10259435/Rossiyskiy-vrach-rasskazal-kak-spas-uzbekistanku-v-nebe-nad-tundroy.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_uz//1026/01/10260106.jpg" width="213" height="130" alt="" title="" class=""></a></div><div class="b-orbit__title"><a href="https://uz.sputniknews.ru/incidents/20181214/10259435/Rossiyskiy-vrach-rasskazal-kak-spas-uzbekistanku-v-nebe-nad-tundroy.html" target="_blank">"Надеюсь, все обошлось"</a></div><div class="b-orbit__announce"><p>Российский врач рассказал, как спас узбекистанку, оказавшуюся на волосок от смерти во время полета из Петропавловска-Камчатского в Москву.</p></div></li></ul><ul class="b-orbit__list"><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://sputnik-ossetia.ru" rel="tag" target="_blank">SPUTNIK Южная Осетия</a></div><div class="b-orbit__img"><a href="https://sputnik-ossetia.ru/South_Ossetia/20181214/7729342/Rezervistov-Yuzhnoy-Osetii-prizvali-na-voennye-sbory.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_os/498/05/4980582.jpg" width="213" height="130" alt="Показательные учения на полигоне. " title="Показательные учения на полигоне. " class=""></a></div><div class="b-orbit__title"><a href="https://sputnik-ossetia.ru/South_Ossetia/20181214/7729342/Rezervistov-Yuzhnoy-Osetii-prizvali-na-voennye-sbory.html" target="_blank">Готовы к обороне</a></div><div class="b-orbit__announce"><p>Президент Южной Осетии Анатолий Бибилов подписал указ о проведении военных сборов с гражданами республики в запасе.</p></div></li><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://lv.sputniknews.ru" rel="tag" target="_blank">SPUTNIK Латвия</a></div><div class="b-orbit__img"><a href="https://lv.sputniknews.ru/lifestyle/20181214/10331033/Segodnya-v-Latvii-nachnut-rabotat-novye-lyzhnye-trassy.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_lv/14/09/140939.jpg" width="213" height="130" alt="Зимние виды спорта. Лыжи" title="Зимние виды спорта. Лыжи" class=""></a></div><div class="b-orbit__title"><a href="https://lv.sputniknews.ru/lifestyle/20181214/10331033/Segodnya-v-Latvii-nachnut-rabotat-novye-lyzhnye-trassy.html" target="_blank">Вставай на лыжи!</a></div><div class="b-orbit__announce"><p>В Латвии открываются новые лыжные трассы: представители спортивных комплексов рассказали, как борются с отсутствием снега.</p></div></li><li class="b-orbit__item"><div class="b-orbit__header"><a href="https://lt.sputniknews.ru" rel="tag" target="_blank">SPUTNIK Литва</a></div><div class="b-orbit__img"><a href="https://lt.sputniknews.ru/video/20181214/7808923/Lithuania-pogranichniki-zagadali-polzovatelyam-zagadku-o-rysi-i-zabore.html" target="_blank"><img src="https://id.sputniknews.com/images/orbit/sputnik_lt/780/85/7808537.jpg" width="213" height="130" alt="Литовские пограничники сняли на видео рысь" title="Литовские пограничники сняли на видео рысь" class=""></a></div><div class="b-orbit__title"><a href="https://lt.sputniknews.ru/video/20181214/7808923/Lithuania-pogranichniki-zagadali-polzovatelyam-zagadku-o-rysi-i-zabore.html" target="_blank">Загадка о рыси</a></div><div class="b-orbit__announce"><p>Литовские пограничники опубликовали видео с камер наблюдения, на котором рысь перелезает через забор, и предложили угадать его высоту.</p></div></li></ul></div></div></div></div><div class="l-sidebar"><div class="b-block b-tabs b-news m-border "><h3 class="b-block__title">Новости</h3><div class="b-block__container"><ul class="b-tabs__head"><li class="b-tabs__head-item active"><a href="#mostread-tab">Самое читаемое</a></li><li class="b-tabs__head-item"><a href="#latest-tab">Свежее</a></li></ul><div class="b-tabs__content" id="latest-tab"><ul><li class="b-news__item"><span class="b-news__time"><!--noindex-->16:01<!--/noindex--></span><a href="/incidents/20181215/1039178074/Belorusy-pytalis-nezakonno-perepravit-v-Rossiyu-60-korov.html">Белорусы пытались незаконно переправить в Россию 60 коров</a></li><li class="b-news__item"><span class="b-news__time"><!--noindex-->15:40<!--/noindex--></span><a href="/sport/20181215/1039177863/IBU-ne-budet-otstranyat-rossiyan-ot-uchastiya-v-Kubke-mira.html">IBU не будет отстранять россиян от участия в Кубке мира</a></li><li class="b-news__item"><span class="b-news__time"><!--noindex-->15:31<!--/noindex--></span><a href="/photo/20181215/1039177611/Shpilki-mini-i-voyazh-v-Parizh-kak-vybirali-edinstvennuyu-v-strane-Miss-ZhKKh.html">Шпильки, мини и вояж в Париж: как выбирали единственную в стране Мисс ЖКХ</a></li><li class="b-news__item"><span class="b-news__time"><!--noindex-->15:17<!--/noindex--></span><a href="/sport/20181215/1039176708/Krivko-zanyala-12-e-mesto-v-pasyute-na-vtorom-etape-KM.html">Кривко заняла 12-е место в пасьюте на втором этапе КМ</a></li><li class="b-news__item"><span class="b-news__time"><!--noindex-->15:00<!--/noindex--></span><a href="/video/20181215/1039175848/Peretyatko-pela-duetom-s-Robbi-Uilyamsom-no-spela-by-i-s-Zemfiroy.html">Перетятько: пела дуэтом с Робби Уильямсом, но спела бы и с Земфирой</a></li></ul><a href="/archive/" class="b-news__more">Все новости</a></div><div class="b-tabs__content active" id="mostread-tab"><ul><li class="b-news__item"><a href="/lifestyle/20181214/1039150644/Prints-Garri-vpal-v-depressiyu-iz-za-napadok-na-Megan-Markl.html">Принц Гарри впал в депрессию из-за нападок на Меган Маркл</a><div class="b-counters "><span class="b-counters-icon b-counters-icon_view"><i></i><!--noindex-->38493<!--/noindex--></span></div></li><li class="b-news__item"><a href="/society/20181213/1039127115/Megan-Markl-i-Keyt-Middlton-vedut-sekretnuyu-perepisku.html">Меган Маркл и Кейт Миддлтон ведут секретную переписку</a><div class="b-counters "><span class="b-counters-icon b-counters-icon_view"><i></i><!--noindex-->23458<!--/noindex--></span></div></li><li class="b-news__item"><a href="/defense_safety/20181214/1039156575/Lukashenko-na-ispytaniyakh-Poloneza-u-voennykh-mokro-bylo.html">Лукашенко: на испытаниях "Полонеза" у военных мокро было</a><div class="b-counters "><span class="b-counters-icon b-counters-icon_view"><i></i><!--noindex-->17022<!--/noindex--></span></div></li><li class="b-news__item"><a href="/lifestyle/20181212/1039121394/Iz-dvortsa-pozvonili-lyubitelskie-snimki-Megan-Markl-ischezli-iz-seti.html">"Из дворца позвонили": любительские снимки Меган Маркл исчезли из Сети</a><div class="b-counters "><span class="b-counters-icon b-counters-icon_view"><i></i><!--noindex-->15019<!--/noindex--></span></div></li><li class="b-news__item"><a href="/economy/20181213/1039131499/Lukashenko-prigrozil-uyti-s-rynka-Rossii.html">Лукашенко пригрозил уйти с рынка России</a><div class="b-counters "><span class="b-counters-icon b-counters-icon_view"><i></i><!--noindex-->14214<!--/noindex--></span></div></li></ul><a href="/archive/" class="b-news__more">Все новости</a></div></div></div><div class="b-banner m-banner-16 m-mb20"><!-- Yandex.RTB R-A-179764-1 -->
+<div id="yandex_rtb_R-A-179764-1"></div>
+<script type="text/javascript">
+    (function(w, d, n, s, t) {
+        w[n] = w[n] || [];
+        w[n].push(function() {
+            Ya.Context.AdvManager.render({
+                blockId: "R-A-179764-1",
+                renderTo: "yandex_rtb_R-A-179764-1",
+                async: true
+            });
+        });
+        t = d.getElementsByTagName("script")[0];
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.src = "//an.yandex.ru/system/context.js";
+        s.async = true;
+        t.parentNode.insertBefore(s, t);
+    })(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+
+
+
+
+<!--
+
+ <br>
+<div id="Sputnik" data-title="Новости спорта"></div>
+<script async src="https://sputnik.by/export/block/sport.js"></script>
+
+
+<br>
+<div id="Sputnik" data-title="Новости Молдовы"></div>
+<script async src="https://ru.sputnik.md/export/block/moldova.js"></script> -->
+</div><div class="b-block b-columnists m-hauto"><h3 class="b-block__title"><a href="https://sputnik.by/columnists/">Колумнисты</a></h3><ul class="b-columnists__list"><li class="b-columnists__list-item"><div class="b-columnists__list-img"><img src="https://cdn2.img.sputnik.by/images/103121/23/1031212385.jpg" width="60" height="60" alt="Олег Дмитриев" title="Олег Дмитриев" class=""></div><div class="b-columnists__list-text"><h4><a href="/authors/oleg_dmitriev/">Олег Дмитриев</a></h4><div><a href="/sport/20181212/1039112384/Khokkeynyy-splav-belorus-Skabelka-v-kazakhstanskom-Baryse-.html">Хоккейный сплав: белорус Скабелка в казахстанском "Барысе" </a></div></div></li><li class="b-columnists__list-item"><div class="b-columnists__list-img"><img src="https://cdn1.img.sputnik.by/images/103191/82/1031918222.jpg" width="60" height="60" alt="Андрей Петрашкевич" title="Андрей Петрашкевич" class=""></div><div class="b-columnists__list-text"><h4><a href="/authors/andrew_petrashkevich/">Андрей Петрашкевич</a></h4><div><a href="/columnists/20181213/1039126261/Imeniny-serdtsa-i-skorbi-tela.html">Именины сердца и скорби тела</a></div></div></li><li class="b-columnists__list-item"><div class="b-columnists__list-img"><img src="https://cdn1.img.sputnik.by/images/102536/57/1025365746.jpg" width="60" height="60" alt="Руслан Васильев" title="Руслан Васильев" class=""></div><div class="b-columnists__list-text"><h4><a href="/authors/ruslan_vasilev/">Руслан  Васильев</a></h4><div><a href="/columnists/20181212/1039121977/Nas-zhdet-ne-salonnaya-draka-v-Salonikakh-ili-PAOK-protiv-BATE.html">Нас ждет не салонная драка в Салониках, или ПАОК против БАТЭ</a></div></div></li><li class="b-columnists__list-item"><div class="b-columnists__list-img"><img src="https://cdn1.img.sputnik.by/images/103334/93/1033349372.jpg" width="60" height="60" alt="Игорь Козлов" title="Игорь Козлов" class=""></div><div class="b-columnists__list-text"><h4><a href="/authors/kozlov/">Игорь Козлов</a></h4><div><a href="/columnists/20181213/1039138174/Estestvennyy-otbor-perekhodnogo-vozrasta.html">Естественный отбор переходного возраста</a></div></div></li></ul></div><div class="b-block b-slider b-slider-short "><h3 class="b-block__title white"><a href="http://sputnik.by/tests/">Тесты</a></h3><div class="b-slider__container"><ul class="b-slider__list"><li class="b-slider__item"><div class="b-slider__item-img"><a href="/tests/20181206/1039045359.html"><img src="https://cdn1.img.sputnik.by/images/101996/98/1019969830.jpg" width="260" height="160" alt="Александр Солодуха, архивное фото" title="Александр Солодуха, архивное фото" class=""></a></div><div class="b-slider__item-announce"><a href="/tests/20181206/1039045359.html">Тест: как хорошо вы знаете белорусскую эстраду?</a></div></li><li class="b-slider__item"><div class="b-slider__item-img"><a href="/tests/20181202/1037316781/test-otgadaj-rossijskij-film-po-ehmodzi.html"><img src="https://cdn2.img.sputnik.by/images/103731/64/1037316481.jpg" width="260" height="160" alt="Актер Константин Хабенский на съемках фильма" title="Актер Константин Хабенский на съемках фильма" class=""></a></div><div class="b-slider__item-announce"><a href="/tests/20181202/1037316781/test-otgadaj-rossijskij-film-po-ehmodzi.html">Тест: отгадай российский фильм по эмодзи</a></div></li><li class="b-slider__item"><div class="b-slider__item-img"><a href="/tests/20181127/1038867136/Test-chto-ty-znaesh-o-torgovle-lyudmi.html"><img src="https://cdn1.img.sputnik.by/images/102622/91/1026229156.jpg" width="260" height="160" alt="Семейное насилие" title="Семейное насилие" class=""></a></div><div class="b-slider__item-announce"><a href="/tests/20181127/1038867136/Test-chto-ty-znaesh-o-torgovle-lyudmi.html">Тест: что ты знаешь о торговле людьми</a></div></li><li class="b-slider__item"><div class="b-slider__item-img"><a href="/tests/20181115/1038593988/Test-kto-vy-iz-filma-Fantasticheskie-tvari.html"><img src="https://cdn2.img.sputnik.by/images/102613/92/1026139229.jpg" width="260" height="160" alt="Кадр из фильма Фантастические твари и где они обитают" title="Кадр из фильма Фантастические твари и где они обитают" class=""></a></div><div class="b-slider__item-announce"><a href="/tests/20181115/1038593988/Test-kto-vy-iz-filma-Fantasticheskie-tvari.html">Тест: кто вы из фильма "Фантастические твари"?</a></div></li><li class="b-slider__item"><div class="b-slider__item-img"><a href="/tests/20181111/1038592154/Test-naskolko-vy-toksichny.html"><img src="https://cdn1.img.sputnik.by/images/103499/29/1034992958.jpg" width="260" height="160" alt="Злой кот, архивное фото" title="Злой кот, архивное фото" class=""></a></div><div class="b-slider__item-announce"><a href="/tests/20181111/1038592154/Test-naskolko-vy-toksichny.html">Тест: насколько вы токсичны?</a></div></li><li class="b-slider__item"><div class="b-slider__item-img"><a href="/tests/20181109/1038574055/Test-kakoy-vy-zhurnalist.html"><img src="https://cdn1.img.sputnik.by/images//103857/38/1038573850.jpg" width="260" height="160" alt="Фигурка журналиста" title="Фигурка журналиста" class=""></a></div><div class="b-slider__item-announce"><a href="/tests/20181109/1038574055/Test-kakoy-vy-zhurnalist.html">Тест: какой вы журналист?</a></div></li><li class="b-slider__item"><div class="b-slider__item-img"><a href="/tests/20181107/1038528394/Test-kakaya-vy-printsessa.html"><img src="https://cdn2.img.sputnik.by/images//103852/83/1038528337.jpg" width="260" height="160" alt="Какая вы принцесса" title="Какая вы принцесса" class=""></a></div><div class="b-slider__item-announce"><a href="/tests/20181107/1038528394/Test-kakaya-vy-printsessa.html">Тест: какая вы принцесса?</a></div></li><li class="b-slider__item"><div class="b-slider__item-img"><a href="/tests/20181018/1038231504/Test-na-kakoe-zhivotnoe-vy-pokhozhi.html"><img src="https://cdn2.img.sputnik.by/images/103178/85/1031788585.jpg" width="260" height="160" alt="Амурский тигр" title="Амурский тигр" class=""></a></div><div class="b-slider__item-announce"><a href="/tests/20181018/1038231504/Test-na-kakoe-zhivotnoe-vy-pokhozhi.html">Тест: на какое животное вы похожи?</a></div></li><li class="b-slider__item"><div class="b-slider__item-img"><a href="/infographics/20181122/1038206419/Test-na-sklonnost-k-dushevnym-rasstroystvam.html"><img src="https://cdn2.img.sputnik.by/images//103820/57/1038205727.jpg" width="260" height="160" alt="Тест на склонность к душевным расстройствам – инфографика на sputnik.by" title="Тест на склонность к душевным расстройствам – инфографика на sputnik.by" class=""></a></div><div class="b-slider__item-announce"><a href="/infographics/20181122/1038206419/Test-na-sklonnost-k-dushevnym-rasstroystvam.html">Психотест: проверь свое душевное здоровье</a></div></li></ul><div class="arrow-holder left"></div><div class="arrow-holder right"></div></div></div><div class="b-block b-tabs b-multimedia-light"><h3 class="b-block__title"><a href="/multimedia/">Мультимедиа</a></h3><ul class="b-tabs__head"><li class="b-tabs__head-item active"><a href="#photo-tab">Фото</a></li><li class="b-tabs__head-item"><a href="#video-tab">Видео</a></li><li class="b-tabs__head-item"><a href="#infographics-tab">Инфографика</a></li></ul><div class="b-tabs__content active" id="photo-tab"><a href="/photo/20181213/1039131144/krushenie-skorostnogo-poezda-v-ankare-foto.html"><img src="https://cdn2.img.sputnik.by/images//103913/17/1039131777.jpg" width="260" height="160" alt="Сошедший с рельс скоростной поезд в Анкаре, Турция " title="Сошедший с рельс скоростной поезд в Анкаре, Турция " class=""></a><div class="b-multimedia-light__title"><a href="/photo/20181213/1039131144/krushenie-skorostnogo-poezda-v-ankare-foto.html">Крушение скоростного поезда в Анкаре — фото</a></div></div><div class="b-tabs__content" id="video-tab"><a href="/video/20181206/1039045457/Kuda-utekla-Nemiga-i-chem-pravil-Vitovt-Chto-belorusy-znayut-o-sebe-video.html"><img src="https://cdn1.img.sputnik.by/images//103904/53/1039045392.jpg" width="260" height="160" alt="Опрос: Как хорошо белорусы знают Беларусь?" title="Опрос: Как хорошо белорусы знают Беларусь?" class=""></a><div class="b-multimedia-light__title"><a href="/video/20181206/1039045457/Kuda-utekla-Nemiga-i-chem-pravil-Vitovt-Chto-belorusy-znayut-o-sebe-video.html">Куда утекла Немига и чем правил Витовт? Что белорусы знают о себе (видео)</a></div></div><div class="b-tabs__content" id="infographics-tab"><a href="/infographics/20181212/1039114741/Skorost-interneta-v-stranakh-mira.html"><img src="https://cdn1.img.sputnik.by/images//103911/46/1039114608.jpg" width="260" height="160" alt="Рейтинг скорости мобильного интернета Speedtest Global Index по странам" title="Рейтинг скорости мобильного интернета Speedtest Global Index по странам" class=""></a><div class="b-multimedia-light__title"><a href="/infographics/20181212/1039114741/Skorost-interneta-v-stranakh-mira.html">Скорость интернета в странах мира</a></div></div></div><div class="b-banner m-banner-1 m-mb20"><!--AdFox START-->
+<!--riaru-->
+<!--Площадка: sputnik.by / * / *-->
+<!--Тип баннера: 300x-->
+<!--Расположение: 21020_bn20-->
+<div id="adfox_14945711166881128"></div>
+<script>
+    window.Ya.adfoxCode.create({
+        ownerId: 249922,
+        containerId: 'adfox_14945711166881128',
+        params: {
+            pp: 'iwp',
+            ps: 'ckaq',
+            p2: 'flng',
+            puid1: ''
+        }
+    });
+</script>
+
+<!--AdFox START-->
+<!--riaru-->
+<!--Площадка: sputnik.by / * / *-->
+<!--Тип баннера: 300x-->
+<!--Расположение: 21003_bn3-->
+<div id="adfox_1481032060353635"></div>
+<script>
+    window.Ya.adfoxCode.create({
+        ownerId: 249922,
+        containerId: 'adfox_1481032060353635',
+        params: {
+            pp: 'iwl',
+            ps: 'ckaq',
+            p2: 'flng'
+        }
+    });
+</script></div><div class="b-block b-columnists m-hauto"><h3 class="b-block__title"><a href="https://sputnik.by/trend/new-year-2019/">Новый год</a></h3><ul class="b-columnists__list"><li class="b-columnists__list-item"><div class="b-columnists__list-img"><img src="https://cdn1.img.sputnik.by/images//103906/34/1039063450.jpg" width="60" height="60" alt="Пирожные, архивное фото" title="Пирожные, архивное фото" class=""></div><div class="b-columnists__list-text"><div><a href="/lifestyle/20181209/1039063818/Volshebstvo-na-kukhne-retsepty-skazochnykh-lakomstv.html">Волшебство на кухне: рецепты сказочных лакомств</a></div></div></li><li class="b-columnists__list-item"><div class="b-columnists__list-img"><img src="https://cdn1.img.sputnik.by/images/103642/77/1036427766.jpg" width="60" height="60" alt="Свиньи, архивное фото" title="Свиньи, архивное фото" class=""></div><div class="b-columnists__list-text"><div><a href="/event/20180706/1036428135/god-zheltoj-zemlyanoj-svini-2019.html">Год Желтой Земляной Свиньи: как встретить и что дарить на Новый год - 2019</a></div></div></li><li class="b-columnists__list-item"><div class="b-columnists__list-img"><img src="https://cdn1.img.sputnik.by/images/103282/35/1032823556.jpg" width="60" height="60" alt="Биг-Бен на фоне салюта во время празднования Нового года в Лондоне" title="Биг-Бен на фоне салюта во время празднования Нового года в Лондоне" class=""></div><div class="b-columnists__list-text"><div><a href="/event/20180929/1037817045/new-year-2019-travel.html">Куда поехать на Новый год: гид по путешествиям в праздники</a></div></div></li><li class="b-columnists__list-item"><div class="b-columnists__list-img"><img src="https://cdn2.img.sputnik.by/images//103896/21/1038962103.jpg" width="60" height="60" alt="Девушка в рождественских носках" title="Девушка в рождественских носках" class=""></div><div class="b-columnists__list-text"><div><a href="/lifestyle/20181201/1038961981/Prosto-i-so-vkusom-v-chem-vstrechat-Novyy-god-doma.html">Просто и со вкусом: в чем встречать Новый год дома</a></div></div></li><li class="b-columnists__list-item"><div class="b-columnists__list-img"><img src="https://cdn2.img.sputnik.by/images//103877/77/1038777725.jpg" width="60" height="60" alt="В ЦУМе уже готовы ко встрече Нового года" title="В ЦУМе уже готовы ко встрече Нового года" class=""></div><div class="b-columnists__list-text"><div><a href="/lifestyle/20181121/1038779402/V-lyuksovoe-ili-samoe-deshevoe-Skolko-stoit-naryadit-elku-na-Novyy-god-2019.html">Сколько стоит нарядить елку на Новый год 2019</a></div></div></li></ul></div><div class="b-block b-tabs "><h3 class="b-block__title">Соцсети</h3><ul class="b-tabs__head"><li class="b-tabs__head-item active"><a href="#facebook-tab">Facebook</a></li><li class="b-tabs__head-item"><a href="#twitter-tab">Twitter</a></li><li class="b-tabs__head-item"><a href="#vk-tab" id="vk-widget">Vkontakte</a></li><li class="b-tabs__head-item"><a href="#ok-tab">Ok</a></li></ul><div class="b-tabs__content m-p10 active" id="facebook-tab"><div class="fb-page" data-width="278" data-height="258" data-href="https://www.facebook.com/sputnikbelarus" data-hide-cover="true" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/sputnikbelarus"><a href="https://www.facebook.com/sputnikbelarus">sputnikbelarus</a></blockquote></div></div></div><div class="b-tabs__content m-p10" id="twitter-tab"><a class="twitter-timeline" height="260" href="https://twitter.com/sputnikbelarus" data-lang="ru" data-widget-id="715110939281002496">@sputnikbelarus</a></div><div class="b-tabs__content m-p10" id="vk-tab"><script type="text/javascript" src="//vk.com/js/api/openapi.js?153"></script><div id="vk_widget"></div><script type="text/javascript">
+                            document.getElementById('vk-widget').addEventListener('click', function(){
+                            VK.Widgets.Group("vk_widget", {mode: 0, width: "278", height: "260"}, '82429369');
+                            this.removeEventListener('click', arguments.callee);
+                            },false);
+                        </script></div><div class="b-tabs__content m-p10" id="ok-tab"><div id="ok_group_widget"></div><script>
+                            !function (d, id, did, st) {
+                            var js = d.createElement("script");
+                            js.src = "https://connect.ok.ru/connect.js";
+                            js.onload = js.onreadystatechange = function () {
+                            if (!this.readyState || this.readyState == "loaded" || this.readyState == "complete") {
+                            if (!this.executed) {
+                            this.executed = true;
+                            setTimeout(function () {
+                            OK.CONNECT.insertGroupWidget(id,did,st);
+                            }, 0);
+                            }
+                            }}
+                            d.documentElement.appendChild(js);
+                            }(document,"ok_group_widget","53622940434687","{width:278,height:260}");
+                        </script></div></div><div class="b-banner m-banner-18 m-mb20"><div id="smi_teaser_11884">
+    <center>
+        <a href="https://24smi.info/?utm_source=informer_11884">
+            Агрегатор новостей 24СМИ
+        </a>
+    </center>
+</div>
+
+<script type="text/JavaScript" encoding="utf8">
+ (function() {
+ var sm = document.createElement("script");
+ sm.type = "text/javascript";
+ sm.async = true;
+ sm.src = "//jsn.24smi.net/5/9/11884.js";
+ var s = document.getElementsByTagName("script")[0];
+ s.parentNode.insertBefore(sm, s);})();
+</script>
+
+<!-- Composite Start -->
+<div id="M293774ScriptRootC668539">
+        <div id="M293774PreloadC668539">
+        загрузка...    </div>
+        <script>
+                (function(){
+            var D=new Date(),d=document,b='body',ce='createElement',ac='appendChild',st='style',ds='display',n='none',gi='getElementById',lp=d.location.protocol,wp=lp.indexOf('http')==0?lp:'https:';
+            var i=d[ce]('iframe');i[st][ds]=n;d[gi]("M293774ScriptRootC668539")[ac](i);try{var iw=i.contentWindow.document;iw.open();iw.writeln("<ht"+"ml><bo"+"dy></bo"+"dy></ht"+"ml>");iw.close();var c=iw[b];}
+            catch(e){var iw=d;var c=d[gi]("M293774ScriptRootC668539");}var dv=iw[ce]('div');dv.id="MG_ID";dv[st][ds]=n;dv.innerHTML=668539;c[ac](dv);
+            var s=iw[ce]('script');s.async='async';s.defer='defer';s.charset='utf-8';s.src=wp+"//jsc.lentainform.com/s/p/sputnik.by.668539.js?t="+D.getYear()+D.getMonth()+D.getUTCDate()+D.getUTCHours();c[ac](s);})();
+    </script>
+    </div>
+<!-- Composite End --></div></div></div><img src="/services/counter/?project=&amp;obj_id=1038017832&amp;obj_type=article&amp;action_type=&amp;ts=1544879153" alt="" style="visibility: hidden; position: absolute;"></div><div class="l-wrap b-content-banner m-oh"><div class="b-banner m-banner-4 m-mt20 m-mb20"><!--В head сайта один раз подключите библиотеку-->
+<script src="https://yastatic.net/pcode/adfox/loader.js"></script>
+
+<!--AdFox START-->
+<!--riaru-->
+<!--Площадка: sputnik.by / * / *-->
+<!--Тип баннера: 1000x-->
+<!--Расположение: 21002_bn2-->
+<div id="adfox_1481031608342900"></div>
+<script>
+    window.Ya.adfoxCode.create({
+        ownerId: 249922,
+        containerId: 'adfox_1481031608342900',
+        params: {
+            pp: 'iwk',
+            ps: 'ckaq',
+            p2: 'fliq'
+        }
+    });
+</script></div></div><footer class="footer"><div class="l-wrap m-oh"><div class="m-pl36"><div class="footer__nav m-clear"><dl><dt><a href="/world/">В мире</a></dt><dd></dd></dl><dl><dt><a href="/country/">В Беларуси</a></dt><dd></dd></dl><dl><dt><a href="/press_release/">Пресс-релизы</a></dt><dd></dd></dl><dl><dt><a href="/docs/about/terms_of_use.html">Правила использования</a></dt><dd></dd></dl><dl><dt><a href="/docs/about/index.html">О проекте</a></dt><dd></dd></dl><dl><dt><a href="/docs/about/contact.html">Контакты</a></dt><dd></dd></dl><dl><dt><a href="/tags/geo_Minsk/" target="_blank">Новости Минска</a></dt><dd></dd></dl><dl><dt><a href="/tags/geo_Vitebsk/">Новости Витебска</a></dt><dd></dd></dl><dl><dt><a href="/tags/geo_Mogilev/">Новости Могилева</a></dt><dd></dd></dl><dl><dt><a href="http://s13.ru">Новости Гродно</a></dt><dd></dd></dl><dl><dt><a href="/tags/geo_Gomel/">Новости Гомеля</a></dt><dd></dd></dl><dl><dt><a href="/tags/geo_Brest/">Новости Бреста</a></dt><dd></dd></dl><dl><dt><a href="/docs/about/marketing.html">Реклама</a></dt><dd></dd></dl><dl><dt><a href="https://sputnik.by/company_news/">Новости компаний</a></dt><dd></dd></dl></div><div class="footer__copyright">
+            
+                © 2018 Sputnik <br/>Все права защищены. <br/>18+
+            
+        </div>
+            
+
+            
+        
+            
+                <script>
+                    (function (w, d, c) {
+                    (w[c] = w[c] || []).push(function() {
+                    var options =
+                    { project: 4454795 }
+                    ;
+                    try
+                    { w.top100Counter = new top100(options); }
+                    catch(e) { }
+                    });
+                    var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function ()
+                    { n.parentNode.insertBefore(s, n); }
+                    ;
+                    s.type = "text/javascript";
+                    s.async = true;
+                    s.src =
+                    (d.location.protocol == "https:" ? "https:" : "http:") +
+                    "//st.top100.ru/top100/top100.js";
+                    if (w.opera == "[object Opera]")
+                    { d.addEventListener("DOMContentLoaded", f, false); }
+                    else
+                    { f(); }
+                    })(window, document, "_top100q");
+                </script>
+                <noscript><img src="//counter.rambler.ru/top100.cnt?pid=4454795" alt="Rambler"></noscript>
+            
+        <div class="footer__copyright"><a href="https://itunes.apple.com/us/app/sputnik-news/id969452947"><img alt="itunes.apple.com" class="footer-img__app" src="/i/appstore_icon.png"></a><a href="https://play.google.com/store/apps/details?id=com.sputniknews.sputnik"><img alt="play.google.com" class="footer-img__app" src="/i/googleplay_icon.png"></a></div></div></div></footer><script src="https://cdn1.img.sputnik.by/min/js/plugins/jquery.touchcarousel-1.2.min.js?213817f0"></script><script src="https://cdn1.img.sputnik.by/min/js/plugins/lightslider.min.js?26f12b5cb"></script><script src="https://cdn1.img.sputnik.by/min/js/plugins/jquery.smartbanner.js?2f3d86a52"></script><script src="https://cdn1.img.sputnik.by/min/js/plugins/jquery-ui.min.js?2d7e9ed7d"></script><script src="https://cdn1.img.sputnik.by/min/js/plugins/jquery.ui.touch-punch.min.js?233e1cc86"></script><script src="https://cdn1.img.sputnik.by/min/js/plugins/jquery.jplayer.2.9.0.min.js?2c1871e36"></script><script src="https://cdn1.img.sputnik.by/min/js/plugins/social-likes.min.js?270018225"></script><script src="https://cdn2.img.sputnik.by/min/js/sputnik.js?2aa80a547"></script><script>
+                window.twttr = (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0],
+                        t = window.twttr || {};
+                    if (d.getElementById(id)) return t;
+                    js = d.createElement(s);
+                    js.id = id;
+                    js.src = "https://platform.twitter.com/widgets.js";
+                    fjs.parentNode.insertBefore(js, fjs);
+                    t._e = [];
+                    t.ready = function(f) {
+                      t._e.push(f);
+                    };
+                    return t;
+                }(document, "script", "twitter-wjs"));
+            </script><script async="async" defer src="//platform.instagram.com/en_US/embeds.js"></script><script async="async" defer src="//apis.google.com/js/platform.js">
+                {lang: 'ru', parsetags: 'explicit'}
+            </script><script>var GLOBAL = {}; GLOBAL.csrf_token = ''; GLOBAL.auth = {}; GLOBAL.auth.status = 'error'; GLOBAL.auth.provider = ''; GLOBAL.auth.twitter = '/id/twitter/request/'; GLOBAL.auth.facebook = '/id/facebook/request/'; GLOBAL.auth.vkontakte = '/id/vkontakte/request/'; GLOBAL.auth.google = '/id/google/request/'; GLOBAL.user = {}; GLOBAL.user.id = ""; GLOBAL.user.username = ""; GLOBAL.user.email = ""; GLOBAL.user.picture = ""; GLOBAL.user.gdpragreement = ""; GLOBAL.locale = {}; GLOBAL.locale.id = {}; GLOBAL.locale.id.project_name = 'Sputniknews.com'; GLOBAL.locale.id.project_id = 'web.com.sputniknews'; GLOBAL.locale.id.domain = 'sputnik.by'; GLOBAL.locale.id.analytic_id = 'UA-42089571-16';</script><script src="https://cdn2.img.sputnik.by/min/js/id/message.js?2ee46e4b7"></script><script src="https://cdn2.img.sputnik.by/min/js/id/modalwindow.js?289b08413"></script><script src="https://cdn2.img.sputnik.by/min/js/id/windows.js?2bb72a341"></script><script>
+                var GLOBAL = GLOBAL || {};
+                GLOBAL.article = {};
+                GLOBAL.article.id = '1038017832';
+            </script><script src="https://cdn1.img.sputnik.by/min/js/plugins/lightgallery.min.js?2efa47f9d"></script><script type="text/javascript">
+          window._taboola = window._taboola || [];
+          _taboola.push({flush: true});
+        </script><script src="https://cdn2.img.sputnik.by/min/js/pages/article.js?2cc35a006"></script><script src="https://cdn2.img.sputnik.by/min/js/comments/comments.js?2134ace07"></script></div><div class="modal-window window-comments-rules modalWindow"><a class="close modalClose"></a><header>Правила пользования</header><section class="body"><div class="rules scrollpane"><p> Факт регистрации и авторизации пользователя на сайтах Спутник при помощи аккаунта или аккаунтов пользователя в социальных сетях обозначает согласие с данными правилами.</p> <p> Пользователь обязуется своими действиями не нарушать национальное и международное законодательство. Пользователь обязуется высказываться уважительно по отношению к другим участникам дискуссии, читателям и лицам, фигурирующим в материалах. </p> <p>Администрация вправе удалить комментарии, сделанные на языках, отличных от языка, на котором представлено основное содержание материала.</p> <p>Комментарий пользователя будет удален, если он: </p> <ul> <li>не соответствует тематике комментируемого сообщения;</li> <li>пропагандирует ненависть, дискриминацию по расовому, этническому, половому, религиозному, социальному признакам, ущемляет права меньшинств;</li> <li>нарушает права несовершеннолетних, причиняет им вред в любой форме, в том числе моральный;</li> <li>содержит идеи экстремистского и террористического характера, призывает к иным незаконным действиям;</li> <li>содержит оскорбления, угрозы в адрес других пользователей, конкретных лиц или организаций, порочит честь и достоинство или подрывает их деловую репутацию;</li> <li>содержит оскорбления или сообщения, выражающие неуважение в адрес Спутник;</li> <li>нарушает неприкосновенность частной жизни, распространяет персональные данные третьих лиц без их согласия, раскрывает тайну переписки;</li> <li>содержит описание или ссылки на сцены насилия, жестокого обращения с животными;</li> <li>содержит информацию о способах суицида, подстрекает к самоубийству;</li> <li>преследует коммерческие цели, содержит ненадлежащую рекламу, незаконную политическую рекламу или ссылки на другие сетевые ресурсы, содержащие такую информацию;</li> <li>продвигает продукты или услуги третьих лиц без соответствующего на то разрешения;</li> <li>содержит оскорбительные выражения или нецензурную лексику и её производные, а также намёки на употребление лексических единиц, подпадающих под это определение;</li> <li>содержит спам, рекламирует распространение спама, сервисы массовой рассылки сообщений и ресурсы для заработка в интернете;</li> <li>рекламирует употребление наркотических/психотропных препаратов, содержит информацию об их изготовлении и употреблении;</li> <li>содержит ссылки на вирусы и вредоносное программное обеспечение;</li> <li>является частью акции, при которой поступает большое количество комментариев с идентичным или схожим содержанием («флешмоб»);</li> <li>автор злоупотребляет написанием большого количества малосодержательных сообщений, или смысл текста трудно либо невозможно уловить («флуд»);</li> <li>автор нарушает сетевой этикет, проявляя формы агрессивного, издевательского и оскорбительного поведения («троллинг»);</li> <li>автор проявляет неуважение к языку, например, текст написан целиком или преимущественно набран заглавными буквами или не разбит на предложения.</li> </ul> <p>Администрация имеет право без предварительного уведомления пользователя заблокировать ему доступ к странице или удалить его аккаунт в случае нарушения пользователем правил комментирования или при обнаружении в действиях пользователя признаков такого нарушения.</p></div></section></div><div class="modal-window window-auth modalWindow"><a class="close modalClose"></a><header></header><section class="body"><form action="/services/id/login/" method="post"><section class="line"><div class="field"><label for="authLogin"></label><input type="text" name="login" id="authLogin" autocomplete="email"></div><div class="field"><label for="authPassword"></label><input type="password" name="password" id="authPassword"></div><div class="field checkbox"><input type="checkbox" name="remember" id="authRemember"><label for="authRemember"><i></i></label></div><div class="field"><button></button></div><div class="links"><a class="register"></a><a class="restore"></a><a href="/docs/about/privacy_policy.html" class="rules"></a></div><div class="field social"><label></label><a class="facebook"></a><a class="twitter"></a><br><a class="vkontakte"></a><a class="google"></a></div></section></form></section><section class="error-message"><label></label></section></div><div class="modal-window window-message modalWindow"><a class="close modalClose"></a><header class="modalWindowHeader"></header><section class="body"><div class="message"><label></label></div><a class="button ok modalClose"></a></section></div><div class="global-fade globalFade"></div><div class="modal-window window-push window-push_sng modalWindow"><div class="push__head">Оповещение SPUTNIK</div><div class="push__body">
+            
+                <p>Вы можете подписаться на оповещения от Sputnik</p>
+            
+        </div><div class="push__btn"><a href="/web_push/subscribe/" class="button">Подписаться</a><a class="button button-default modalClose">Отказаться</a></div></div><script src="https://cdn1.img.sputnik.by/min/js/pages/push.js?283fde07c"></script></body></html>

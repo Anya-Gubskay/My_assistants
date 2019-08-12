@@ -1,0 +1,23 @@
+.footer {
+  overflow: hidden;
+  max-width: 100%;
+  min-height: 70px;
+
+  @media only screen and (max-device-width: 500px) {
+    min-height: 0;
+  }
+  &__logo {
+    position: relative;
+    top: 15px;
+    left: 20px;
+
+    @media only screen and (max-device-width: 500px) {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  i {
+    cursor: pointer;
+  }
+}

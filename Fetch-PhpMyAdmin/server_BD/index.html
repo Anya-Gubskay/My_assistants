@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Node.js Express REST API</title>
+    <link  rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<form action="http://localhost:9999/users" method="post">
+    <label for="login">Login</label>
+    <input type="text" name="login" id = "login">
+    <label for="email">Email</label>
+    <input type="email" name="email" id = "email">
+    <label for="password">Password</label>
+    <input type="password" name="password" id = "password">
+    <input type="submit">
+</form>
+<div class="container">
+<button class="button">Получить</button>
+<button class = "firstBTN"></button>
+<button class = "secondBTN"></button>
+<button class="button">Добавить</button>
+<button class="button">Изменить</button>
+<button class="button">Удалить</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+.section {
+  .flex-row;
+  align-items: normal;
+  justify-content: center;
+  margin: 10px;
+
+  @media only screen  and (max-width: 500px) {
+    min-width: 325px;
+    overflow: hidden;
+  }
+
+  .colored {
+    background: #969dd6;
+  }
+
+  &__item {
+    margin: 10px;
+    max-width: 450px;
+  }
+
+  h1 {
+    font: 40px 'Charm';
+    color: #9b0ff1;
+    width: 100%;
+    text-align: center;
+    background: #002a6f;
+
+    @media only screen  and (max-width: 500px) {
+      font: 25px 'Charm';
+    }
+
+  }
+
+  iframe {
+    padding: 20px;
+
+    @media only screen  and (max-width: 500px) {
+      height: 300px;
+    }
+
+  }
+
+  h2 {
+    font: 25px 'Kelly Slab';
+    color: #00f899;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.64) no-repeat;
+    margin: 10px;
+
+    @media only screen  and (max-width: 500px) {
+      font: 20px 'Kelly Slab';
+    }
+
+  }
+
+  p {
+    padding: 20px;
+    text-align: center;
+    font: 20px 'Lobster';
+    color: #ffd5c4;
+    background: spin(@blue, 70%);
+    max-width: 410px;
+    margin: 0 auto;
+  }
+
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  h1 {
+    font: 40px 'Charm';
+    color: #5f5eff;
+    width: 100%;
+    text-align: center;
+    background: #4d256f;
+    margin: 10px;
+
+    @media only screen  and (max-width: 500px) {
+      font: 25px 'Charm';
+    }
+
+  }
+
+  .book {
+    max-width: 400px;
+    border: inset #5f5eff 12px;
+    margin: 20px;
+    background: #969dd6 no-repeat;
+
+    img {
+      position: relative;
+      left: 25%;
+      margin: 20px 0;
+      .transition(1s);
+
+      &:hover {
+        .transformSk(1.1);
+        cursor: pointer;
+      }
+
+    }
+
+    p {
+      font: bold 20px 'Marck Script';
+      color: #d40101;
+      text-align: center;
+
+      @media only screen  and (max-width: 500px) {
+        font: bold 16px 'Marck Script';
+      }
+
+    }
+
+    a {
+      font: 20px 'Pacifico';
+      position: relative;
+      left: 15%;
+      cursor: pointer;
+      color: #1f03bc;
+      .transition(.5s);
+
+      &:hover {
+        color: #6512bc;
+      }
+
+      @media only screen  and (max-width: 500px) {
+        font: 18px 'Pacifico';
+
+      }
+    }
+  }
+}

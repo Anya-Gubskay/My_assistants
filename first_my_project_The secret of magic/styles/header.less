@@ -1,0 +1,59 @@
+
+.header {
+  min-height: 170px;
+  .flex-row;
+  width: 100%;
+
+  @media only screen  and (max-width: 500px) {
+    min-height: 110px;
+  }
+
+  img {
+    .filter(265deg);
+
+    @media only screen  and (max-width: 1200px) {
+      .transformSk(.8);
+      position: relative;
+      left: -30px;
+    }
+    @media only screen  and (max-width: 820px) {
+      .transformSk(.6);
+      position: relative;
+      left: -30px;
+    }
+
+    @media only screen  and (max-width: 595px) {
+      .transformSk(.4);
+      position: relative;
+      left: -30px;
+    }
+
+  }
+
+  &__logo {
+    font: 60px 'Charm';
+    text-transform: uppercase;
+    background: -webkit-linear-gradient(45deg, #4d52bc 33%, #3e13bc 36%, #a5caff);
+    background: -o-linear-gradient(45deg, #4d52bc 33%, #3e13bc 36%, #a5caff);
+    background: linear-gradient(45deg, #4d52bc 33%, #3e13bc 36%, #a5caff);
+    background: -moz-linear-gradient(45deg, #4d52bc 33%, #3e13bc 36%, #a5caff);
+    background: linear-gradient(45deg, #4d52bc 33%, #3e13bc 36%, #a5caff);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+
+    @media only screen  and (max-width: 1200px) {
+      font: 40px 'Charm';
+    }
+
+    @media only screen  and (max-width: 820px) {
+      font: 30px 'Charm';
+    }
+
+    @media only screen  and (max-width: 595px) {
+      font: 14px 'Charm';
+    }
+
+  }
+}

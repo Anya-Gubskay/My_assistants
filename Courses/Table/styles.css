@@ -1,0 +1,23 @@
+table {
+    border-collapse: collapse;
+    font-family: sans-serif;
+}
+
+td {
+    height: 30px;
+    width: 180px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#addRow {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    width: 95%;
+    display: block;
+    margin: 0 auto;
+}

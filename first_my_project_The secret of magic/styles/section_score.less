@@ -1,0 +1,59 @@
+.section {
+  .flex-row;
+  align-items: normal;
+  justify-content: space-around;
+  max-width: 1500px;
+  min-width: 300px;
+  margin: 0 auto;
+
+  h1 {
+    width: 100%;
+    font: bold 30px 'Marck Script';
+    margin: 50px auto 20px;
+    color: #bc0717;
+    background: rgba(0, 0, 0, 0.73);
+  }
+
+  &__content {
+    max-width: 220px;
+    min-width: 100px;
+    margin: 10px;
+    text-align: center;
+
+    img {
+      cursor: pointer;
+      .transition(.7s);
+
+      &:hover {
+        .filter(250deg);
+      }
+    }
+
+  }
+  .display {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    background: black;
+    .transition(.2s);
+
+    &:active {
+      color: #ff3f0c;
+    }
+
+    span {
+      padding: 10px;
+      font: bold 18px sans-serif;
+      color: #d41a11;
+    }
+
+  }
+
+  &__text {
+    display: none;
+    font: 18px 'Pacifico';
+    background: rgba(0, 0, 0, 0.65);
+    text-align: center;
+  }
+
+}

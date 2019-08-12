@@ -1,0 +1,94 @@
+
+* {
+  box-sizing: border-box;
+  font: 20px sans-serif;
+  color: #d6196f;
+  cursor: default;
+}
+
+body {
+  background: url("../images/main1.gif") repeat;
+}
+
+a {
+  text-decoration: none;
+  color: aqua;
+}
+
+//Миксины, переменные Less
+
+@blue: #03b0bc;
+.box-shadow (@inset:  inset,
+@shiftX: 1px, @shiftY: 1px, @r: 0, @stretching: 0, @color: #002a6f ) {
+  opacity: 1;
+  -moz-box-shadow: @inset @shiftX @shiftY @r @stretching @color;
+  -webkit-box-shadow: @inset @shiftX @r @stretching @shiftY @color;
+  box-shadow: @shiftX @shiftY @r @stretching @color;
+}
+
+.transform3D (@shiftX:-100%,@shiftY:0,@shiftZ:0) {
+  opacity: 0;
+  -webkit-transform: translate3d(@shiftX, @shiftY, @shiftZ);
+  -ms-transform: translate3d(@shiftX, @shiftY, @shiftZ);
+  transform: translate3d(@shiftX, @shiftY, @shiftZ);
+}
+
+.transformSk(@sk:1.2) {
+  opacity: 1;
+  -webkit-transform: scale(@sk);
+  -ms-transform: scale(@sk);
+  transform: scale(@sk);
+}
+
+.filter (@deg:250deg) {
+  -webkit-filter: hue-rotate(@deg);
+  filter: hue-rotate(@deg);
+}
+
+.transition(@time:.5s,@all:all,@rate:linear) {
+  transition: @all @time @rate;
+}
+
+.translate (@shiftY:-130px,@shiftX:0) {
+  -webkit-transform: translate(@shiftX, @shiftY);
+  transform: translate(@shiftX, @shiftY);
+}
+
+.nameAnimation (@name:Left) {
+  -webkit-animation-name: @name;
+  animation-name: @name;
+}
+
+.flex-row {
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+//Свойства обложки сайта
+.wrapper {
+
+  background: url("../images/wallpaper.jpg") no-repeat;
+  width: 80%;
+  max-width: 1800px;
+  min-width: 240px;
+      @media only screen  and (max-width: 500px) {
+       max-width: 100%;
+  }
+
+  margin: 0 auto;
+  background-size: cover;
+  display: flex;
+  flex-flow: column wrap;
+  -webkit-flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+}
